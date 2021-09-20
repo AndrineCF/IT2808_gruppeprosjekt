@@ -24,3 +24,12 @@ h1 {
 .lighter-font-color {
     color: #565A5B;
 }
+
+li {
+    font-weight: bold;
+}
+
+li > p,  .normal-font > li{
+    font-weight: normal;
+}
+
