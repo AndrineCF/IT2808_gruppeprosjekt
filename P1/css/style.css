@@ -29,7 +29,7 @@ li {
     font-weight: bold;
 }
 
-li > p,  .normal-font > li{
+li > p, .normal-font > li{
     font-weight: normal;
 }
 
