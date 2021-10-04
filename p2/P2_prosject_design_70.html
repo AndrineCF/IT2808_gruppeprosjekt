@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="author" content="Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran, Kari Stigen">
+    <meta name="description" content="P1: Project Requirements, IT2805">
+    <meta name="keyword" content="project requirements">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <!-- Legger til ny font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+
+
+    <title>P1: Project Requirements</title>
+  </head>
+  <body>
+
+
+    <header>
+        <h1>P2: Prosjekt design</h1>
+        <h2 class ="lighter-font-color">Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran og Kari Stigen</h2>
+        <span class ="lighter-font-color">4. Oktober 2021</span>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Klient</h2>
+            <p>Klient vår er organisasjon <strong>Nytt hjem for dyr</strong> og kontaktperson forbindelse med prosjektet heter <strong>Einar Lillevik</strong>. 
+                Han er leder av  Nytt hjem for dyr i 5 år. 
+                Han har jobbet med dyr i flere år og tok med seg denne erfaringen når han startet sin egen organisasjon for fosterhjem og adopsjon av dyr. 
+                Einar ønsker at det skal kunne være lettere for en person å finne ut av informasjon i forbindelse med adopsjon og fostering. 
+                Dermed skal denne nettsiden hjelpe Einar å videreføre dette budskapet.</p>
+        </section>
+
+        <section>
+            <h2>Formål og mål</h2>
+            <p>Hensikten med nettsiden er å gjøre lett tilgjengelig for allmenn person å kunne finne fram til all nødvendig informasjon for adopsjon eller fostering av dyr. 
+                Dette inngår også i målet til organisasjonen å ønske utvide sitt nettverk av bruker som flere dyr kan får et hjem. 
+                Dette blir for eksempel vist i innholdet på nettsiden ved situasjon om en bruker ønsker å foster kan de gå innpå “fostering” og lese eventuelt krav/informasjon for å melde seg som fosterhjem.</p>
+        </section>
+
+        <section>
+            <h2>Målgruppe</h2>
+            <p>​​​​Brukere vil hovedsakelig være folk som er på utkikk etter dyr de kan fostre midlertidig eller adoptere permanent, og som ønsker å bruke siden for å finne informasjon om organisasjonen og om ledige dyr. 
+                I tillegg kan informasjon om organisasjonen på nettsiden være aktuell for folk som trenger å adoptere bort dyrene sine. 
+                Til slutt vil også folk som vil bidra med frivillig arbeid eller pengedonasjoner kunne ha bruk for informasjon på nettsiden om hvordan de kan bidra.</p>
+        </section>
+
+        <section>
+            <h2>Navigasjonsstruktur</h2>
+            <p>Strukturen til nettsiden vil være for det meste clique, der unntaket er sidene som har informasjon om en bestemt hund eller katt. 
+                De sidene er strukturert i to hierarkier, den ene med katte-sider under katt.html og den andre hunde-sider under hund.html. 
+                I tillegg kan en side om en bestemt hund eller katt kan nå de andre sidene som er strukturert etter clique, men den kan ikke nå en annen hund- eller katte- side. 
+                En hunde-side kan bare nås gjennom hund.html og en katte-side kan bare nås gjennom katt.html. 
+                Det bør også nevnes at noen av linkene til de faste sidene dukker ikke opp før musen “hover” over menybaren.</p>
+            <p>Grunnen til at vi har for det meste valgt clique er at brukeren skal lettere navigere å nå de faste sidene. 
+                F.eks. en bruker kan gå direkte fra forside.html til en underside som katt.html for å se på om det er noen katter de liker. 
+                Clique kan derimot ikke brukes med alle de bestemte og varierende hunde- og katte-sidene fordi det er for mange av dem. 
+                Det er derfor bedre å ha et hierarki struktur der slik at brukeren ikke må se linker til hunder når de er inne på katt.html. 
+                For eksempel når brukeren trykker seg inn på katten “Cleo” så er det ingen linker hunder eller andre katter som kunne skapt forvirring.</p>
+        </section>
+
+        <section>
+            <h2>Sideoppsett og utseende</h2>
+            <ul>
+                <li>Farge schema:</li>
+                <ul class="normal-font">
+                    <li>Backgrunn: #FFFFFF</li>
+                    <li>Header: </li>
+                    <li>Footer: </li>
+                    <li>Tekst: #000000</li>
+                    <li>Error/Avvis: </li>
+                    <li>Godkjent/Bekreft:</li>
+                </ul>
+            </ul>
+            <ul>
+                <li>Skriftstørrelse og type:</li>
+                <ul class="normal-font">
+                    <li>Overskrifter: </li>
+                    <li>Mellomoverskrifter: </li>
+                    <li>Tekstinnhold: </li>
+                    <li>Footer: </li>
+                    <li>Tekst: </li>
+                </ul>
+            </ul>
+            <ul>
+                <li>Utforming :</li>
+                <ul class="normal-font">
+                    <li>Navbar på topp med logo</li>
+                    <li>Footer i bunnen</li>
+                    <li>Teksten skal være ...</li>
+                    <li>Når man velger et dyr skal dette åpnes i et eget vindu</li>
+                    <li>Skal være neddropp meny for to av elementene i headeren</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Innehold</h2>
+
+            <h3>Forside</h3>
+            <p>Forsiden/hjemmesiden skal være den første siden man kommer til når man besøker nettsiden til Nytt hjem for dyr. 
+                Forsiden vil ikke ha mye innhold, men skal inneholde bilder og noe tekst som gjør at brukeren av nettsiden får et 
+                innblikk i organisasjonen og deretter kan trykke seg videre til den siden som er mest aktuell for vedkommende. 
+                Forsiden skal være enkel og intuitiv, og gjøre brukeren nysgjerrig på resten av innholdet på nettsiden.</p>
+            <p>Øverst skal forsiden inneholde en navigasjonsbar som kan brukes til å navigere videre til de andre sidene. 
+                Logoen til organisasjonen skal vises til venstre i navbaren. Under denne skal det være et slideshow av bilder (browserwidth?) der brukeren kan klikke på piler for å bla til neste bilde. 
+                Under slideshowet skal det være en kort tekst som forklarer at brukeren kan bruke nettsiden til å finne info om katter og hunder som trenger adopsjon/fosterhjem. 
+                Samlet sett håper vi dette vil fange oppmerksomheten til brukeren og gjøre at hun/han får lyst til å undersøke resten av nettsiden. 
+                Dette skal være enkelt, siden vi har en navbar som gjør det lett å klikke seg videre.
+            </p>
+
+            <h3>Fosterhjem</h3>
+            <p>Siden om fosterhjem skal holdes enkel. I motsetning til for adopsjon vil organisasjonen ikke legge ut bilder av dyr som trenger fosterhjem, 
+                da det vanligvis ikke vil være mulig for fosterhjemmet å velge seg ut dyr. Vi vil derfor holde det enkelt, 
+                og heller informere om hva det innebærer å være fosterhjem og hvilke krav som stilles i teksten. 
+                Til slutt skal brukeren kunne klikke seg videre til et kontaktskjema, 
+                dersom man etter å ha lest teksten tenker at å være fosterhjem kan være aktuelt. Navbaren skal være plassert på toppen av siden slik at brukeren lett kan bevege seg til andre deler av nettsiden.</p>
+
+            <h3>Støtt oss/Bidra</h3>
+            <p>Siden «Støtt oss» skal gi informasjon til brukeren om muligheten for å bidra til organisasjonen enten ved æ bli frivillig eller ved å donere penger. 
+                Også denne siden vil holdes enkel, og kun inneholde tekst med informasjon om hva det innebærer å være frivillig og om hvordan man kan bidra med penger. 
+                Etter en kort introtekst skal underoverskrifter og tekst om de to ulike måtene å bidra på gjøre det enkelt og greit for brukeren å finne fram til aktuell informasjon raskt. 
+                Det skal gå tydelig fram hva man skal gjøre dersom man ønsker å bli frivillig og hvordan man kan donere penger. 
+                Navbaren skal være plassert på toppen av siden slik at brukeren lett kan bevege seg til andre deler av nettsiden.</p>
+            
+            <h3>Om oss</h3>
+            <p>Siden «Om oss» skal inneholde et bilde øverst (696x262px, centered?) som fanger brukerens oppmerksomhet. 
+                Deretter skal brukeren få en kort informasjonstekst om organisasjonens historie og dens mål og arbeid. 
+                Deretter skal brukeren kunne lese en kort tekst om at det er mulig å støtte organisasjonen som frivillig eller via pengedonasjon, 
+                siden det kan hende at brukere som besøker denne siden har lyst til å bidra. Nederst på siden skal brukeren finne all aktuell kontaktinformasjon til organisasjonen, 
+                slik at det er enkelt å vite hvordan man kan komme i kontakt med Nytt hjem for dyr. 
+                Navbaren skal være plassert på toppen av siden slik at brukeren lett kan bevege seg til andre deler av nettsiden.</p>
+        </section>
+
+        <section>
+            <h2>Minstekrav</h2>
+            <p>For nettsiden planlegger vi å legge til følge Javascript applikasjoner</p>
+            <ul>
+                <li>Hoverable dropdown menu</li>
+                <p>Formålet å ha denne effekten er å gjøre enklere for brukeren å navigere nettsiden med å gjøre alt lett tilgjengelig. 
+                    Hoverable dropdown menu vil bare være på kategorier for den er nødvendig som adopsjon igjen har under kategorier katt og hund. 
+                </p>
+                <li>Image slider</li>
+                <p>Formålet med denne effekten er å vise flere bilder på organisert måte som ikke vil ta vekket oppmerksomhet fra innholdet på nettsiden. 
+                    Også gjøre nettsiden mer dynamiske og interaktive for brukeren. Image slider effekt vil hovedsakelig bare være på forsiden og egne side til dyret.</p>
+
+                <li>From validation</li>
+                <p>Formålet med form validation er demonstrere et real-case scenario for brukeren sender form for fostering eller adopsjon til organisasjonen. 
+                    Det er bare et form validation som har dynamisk innhold er seg etter brukeren sitt valg for pass de fyller ut nødvendig informasjon i de forskjellige seksjonene. </p>
+
+                <li>Sorting</li>
+                <p>Formålet med sortering av dyrene er for brukeren skal lettere finne dyret som passer de med tanke på alder, kjønn, barnevennlig og rase.</p>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Plan</h2>
+            <h3>Organisasjons skjema</h3>
+            <p>Alle filene under vil være i mappen nytt_hjem_for_dyr. Mappen vil bli skapt under kode fasen  av prosjektet og jobbet mellom oss gjennom Github.</p>
+
+            <p><strong>Lister over filer og mapper:</strong></p>
+            <ul class="normal-font">
+                <li>forside.html</li>
+                <li>adopsjon.html</li>
+                <li>om_hund.html</li>
+                    <ul class="normal-font">
+                        <li>hund_1.html</li>
+                        <li>hund_2.html</li>
+                        <li>...</li>
+                        <li>hund_20.html</li>
+                    </ul>
+                <li>om_katt.html</li>
+                    <ul class="normal-font">
+                        <li>katt_1.html</li>
+                        <li>katt_2.html</li>
+                        <li>...</li>
+                        <li>katt_20.html</li>
+                    </ul>
+                <li>fosterhjem.html</li>
+                <li>om_oss.html</li>
+                <li>stotte_organisasjonen.html/bidra.html</li>
+                <li>img/</li>
+                <ul class="normal-font">
+                    <li>logo.png</li>
+                    <li>hund/</li>
+                        <ul class="normal-font">
+                            <li>hund_1_1.png</li>
+                            <li>hund_1_2.png</li>
+                            <li>hund_1_3.png</li>
+                            <li>hund_2_1.png</li>
+                            <li>...</li>
+                            <li>hund_20_3.png</li>
+                        </ul>
+                    <li>katt/</li>
+                        <ul class="normal-font">
+                            <li>katt_1_1.png</li>
+                            <li>katt_1_2.png</li>
+                            <li>katt_1_3.png</li>
+                            <li>katt_2_1.png</li>
+                            <li>...</li>
+                            <li>katt_20_3.png</li>
+                        </ul>
+                </ul>
+                <li>js/</li>
+                    <ul class="normal-font">
+                        <li>hoverable_dropdown_menu.js</li>
+                        <li>image_slider.js</li>
+                        <li>form_validation.js</li>
+                        <li>sortering.js</li>
+                    </ul>
+            <li>css/</li>
+                <ul class="normal-font">
+                    <li>styling.css</li>
+                </ul>
+            </ul>
+            
+        </section>
+    </main>
+  </body>
+</html>
