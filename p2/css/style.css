@@ -33,3 +33,7 @@ li > p,  .normal-font > li{
     font-weight: normal;
 }
 
+img {
+    width: 80%;
+    height: 80%;
+}
