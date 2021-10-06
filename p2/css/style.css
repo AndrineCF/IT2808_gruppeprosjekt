@@ -25,15 +25,20 @@ h1 {
     color: #565A5B;
 }
 
-li {
+li, table > tr {
     font-weight: bold;
 }
+
 
 li > p,  .normal-font > li{
     font-weight: normal;
 }
 
 img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+}
+
+table, td, td {
+    border: black solid 3px;
 }
