@@ -29,24 +29,20 @@
     <main>
         <section>
             <h2>Klient</h2>
-            <p>Klient vår er organisasjon <strong>Nytt hjem for dyr</strong> og kontaktperson forbindelse med prosjektet heter <strong>Einar Lillevik</strong>. 
-                Han er leder av  Nytt hjem for dyr i 5 år. 
-                Han har jobbet med dyr i flere år og tok med seg denne erfaringen når han startet sin egen organisasjon for fosterhjem og adopsjon av dyr. 
-                Einar ønsker at det skal kunne være lettere for en person å finne ut av informasjon i forbindelse med adopsjon og fostering. 
-                Dermed skal denne nettsiden hjelpe Einar å videreføre dette budskapet.</p>
+            <ul class = "normal-font">
+                <li><strong>Klient:</strong> Einar Lillevik</li>
+                <li><strong>Stilling:</strong> Daglig leder</li>
+            </ul>
         </section>
 
         <section>
-            <h2>Formål og mål</h2>
-            <p>Hensikten med nettsiden er å gjøre lett tilgjengelig for allmenn person å kunne finne fram til all nødvendig informasjon for adopsjon eller fostering av dyr. 
-                Dette inngår også i målet til organisasjonen å ønske utvide sitt nettverk av bruker som flere dyr kan får et hjem. 
-                Dette blir for eksempel vist i innholdet på nettsiden ved situasjon om en bruker ønsker å foster kan de gå innpå “fostering” og lese eventuelt krav/informasjon for å melde seg som fosterhjem.</p>
-        </section>
-
-        <section>
-            <h2>Målgruppe</h2>
-            <p>​​​​Brukere vil hovedsakelig være folk som er på utkikk etter dyr de kan fostre midlertidig eller adoptere permanent, og som ønsker å bruke siden for å finne informasjon om organisasjonen og om ledige dyr. 
-                I tillegg kan informasjon om organisasjonen på nettsiden være aktuell for folk som trenger å adoptere bort dyrene sine. 
+            <h2>Målgruppe, formål og mål</h2>
+            <p>​​Hensikten med nettsiden er å gjøre det mulig for personer som ønsker det å adoptere eller fungere som fosterhjem for dyr som trenger et hjem. 
+                Nettsiden skal derfor hjelpe organisasjonen med målet om å nå ut til flest mulig med informasjon om adopsjon, mulighet for å være fosterhjem samt informasjon om dyrene som er ledige, 
+                slik at dyrene som trenger det kan få et nytt hjem raskest mulig. I tillegg vil nettsiden inneholde informasjon om hvordan man kan støtte organisasjonen, 
+                slik at de som kan og vil har mulighet til å bidra til å holde organisasjonen gående. 
+                Brukerne vil i hovedsak være mennesker på utkikk etter dyr de kan fostre midlertidig eller adoptere permanent, og som ønsker informasjon om organisasjonen og om ledige dyr. 
+                I tillegg kan informasjon om organisasjonen også være aktuell for mennesker som er nødt til å adoptere bort dyrene sine. 
                 Til slutt vil også folk som vil bidra med frivillig arbeid eller pengedonasjoner kunne ha bruk for informasjon på nettsiden om hvordan de kan bidra.</p>
         </section>
 
@@ -159,6 +155,14 @@
                 Det skal gå tydelig fram hva man skal gjøre dersom man ønsker å bli frivillig og hvordan man kan donere penger. 
                 Navbaren skal være plassert på toppen av siden slik at brukeren lett kan bevege seg til andre deler av nettsiden.</p>
             
+            <h3>Om oss</h3>
+            <img src="img/om_oss.png" alt="Bilde av informasjon om organisasjonen og generelt kontakt informasjon">
+            <p>Siden «Om oss» skal inneholde et bilde øverst (696x262px, centered) som fanger brukerens oppmerksomhet. 
+                Deretter skal brukeren få en kort informasjonstekst om organisasjonens historie og dens mål og arbeid. 
+                Nederst på siden skal brukeren finne all aktuell kontaktinformasjon til organisasjonen, 
+                slik at det er enkelt å vite hvordan man kan komme i kontakt med Nytt hjem for dyr. 
+                Navbaren skal være plassert på toppen av siden slik at brukeren lett kan bevege seg til andre deler av nettsiden.</p>
+
             <h3>Info adopsjon dyr</h3>
             <img src="img/adopsjon.png" alt="Bilde av informasjon siden til adopsjon">
             <p>Header og footer i samme stil som forside. 
@@ -202,14 +206,14 @@
             <h2>Minstekrav</h2>
             <p>For nettsiden planlegger vi å legge til følge Javascript applikasjoner</p>
             <ul>
-                <li>Header:
-                    <p>Formålet å ha header som en JavaScript applikasjon er at den skal enkle for endre om den skal være behov for det. 
-                        Den inkludere en <strong>hoverable dropdown menu</strong> som har formålet å ha denne effekten er å gjøre enklere for brukeren å navigere nettsiden med å gjøre alt lett tilgjengelig. 
-                        Hoverable dropdown menu vil bare være på kategorier for den er nødvendig som adopsjon igjen har under kategorier katt og hund.  
+                <li>Navbar:
+                    <p>Formålet å ha navbar som en JavaScript applikasjon på grunn av den skal ha hoverable navbar. 
+                        Formålet å ha den effekten er at det skal være enkelt for brukeren å navigere gjennom nettsiden, 
+                        spesielt kategorier som skal ha under kategorier f.eks. adopsjon.  
                     </p>
                 </li>
                 <li>Footer:
-                    <p>Formålet å ha footer som en JavaScript applikasjon er at den skal enkle for endre om den skal være behov for det. Footer vil inkludere kontakt adresse og organisasjonsnummer.</p>
+                    <p>Formålet å ha footer som en JavaScript applikasjon er at den skal enkle for endre på om den skal være behov for det. Footer vil inkludere kontakt adresse og organisasjonsnummer</p>
                 </li>
                 <li>Image slider:
                     <p>Formålet med denne effekten er å vise flere bilder på organisert måte som ikke vil ta vekket oppmerksomhet fra innholdet på nettsiden. 
@@ -217,6 +221,9 @@
                 </li>
                 <li>Sorting:
                     <p>Formålet med sortering av dyrene er for brukeren skal lettere finne dyret som passer de med tanke på alder, kjønn, barnevennlig og rase.</p>
+                </li>
+                <li>Form validation:
+                    <p>Formålet å form validation som egne Javascript applikasjon er at brukeren kan få tilbakemelding som f.eks. om error. Dette blir gjort at felt som hadde feil vil få en rød teksten sier hva som var feilen.</p>
                 </li>
             </ul>
         </section>
@@ -315,6 +322,12 @@
                         <td>24/10/2021</td>
                     </tr>
                     <tr>
+                        <td>adopsjon.html</td>
+                        <td>Forsiden til nettsiden. Kommer til å ha annerledes styling enn andre sider</td>
+                        <td>Sunniva og Kari</td>
+                        <td>24/10/2021</td>
+                    </tr>
+                    <tr>
                         <td>om_hund.html</td>
                         <td>Siden viser hvilken hunder som er for adopsjon</td>
                         <td>Andrine</td>
@@ -369,10 +382,16 @@
                         <td>15/10/2021</td>
                     </tr>
                     <tr>
-                        <td>header.js</td>
-                        <td>En javascript som legger til en header i alle html.filene. Headeren skal inneholde en menubar som er dropdown</td>
-                        <td>Hermann</td>
+                        <td>navbar.js</td>
+                        <td>En javascript legger til navbar i alle html filene.</td>
+                        <td>Helga</td>
                         <td>15/10/2021</td>
+                    </tr>
+                    <tr>
+                        <td>kontakt_skjema.js</td>
+                        <td>En Javascript fil som utføre funksjonaliteten til form validation i kontakt_skjema.html.</td>
+                        <td>Hermann</td>
+                        <td>29/10/2021</td>
                     </tr>
                     <tr>
                         <td>image_slider.js</td>
