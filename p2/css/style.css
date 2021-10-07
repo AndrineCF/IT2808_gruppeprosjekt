@@ -47,3 +47,7 @@ table, td, th {
 td, th {
     padding: 5px;
 }
+
+th {
+    text-align: left;
+}
