@@ -29,7 +29,6 @@ li, table > tr {
     font-weight: bold;
 }
 
-
 li > p,  .normal-font > li{
     font-weight: normal;
 }
@@ -38,6 +37,10 @@ img {
     width: 100%;
     height: 100%;
     border: 1px solid black;
+}
+
+.none-border{
+    border: none;
 }
 
 table, td, th {
