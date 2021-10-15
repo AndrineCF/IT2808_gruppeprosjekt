@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+}
+
+.content {
+    min-height: 100%;
+
+    margin-bottom: -80px;
+}
+
+/* used to make footer work */
+.push {
+    height: 80px;
+}
+
+
+  /* dropdown styling */
+
+.navbar {
+    /*position: fixed;* husker ikke hva slags posisjon vi skulle ha */
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: solid red 3px;
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:first-child {
+    float: left;
+  }
+  
+  .dropbtn2 {
+    background-color: #444444;
+    color: #FFFFFF;
+    margin: 0 1px 0 0;
+    padding: 4px 3px;
+    width: auto;
+    font: bold 10px arial;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    border: none;
+  }
+  .dropbtn2:hover, .dropbtn2:focus {
+    background-color: #000066;
+    border: none;
+  }
+  .dropdown2 {
+    z-index: 30;
+    float: right;
+    overflow: hidden;
+  }
+  .dropdown2-content {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    width: auto;
+    min-width: 160px;
+    white-space: nowrap;
+    background: #DDDDDD;
+    z-index: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+  }
+  .dropdown2-content a {
+    float: left;
+    color: #000000;
+    padding: 2px 3px;
+    font: 10px arial;
+    display: block;
+  }
+  .dropdown2 a:hover {
+    background: #000066;
+    color: #FFF;
+    border: none;
+    text-decoration: none;
+  }
+  .show {
+    display:block;
+  }
+
+  /* footer styling */
+
+footer {
+    width: 100%;
+    height: 5em;
+    color: #000000;
+    background: #F9DCDC;
+    border-top: 3px #000000 solid;  
+    
+    position: sticky;
+}
+
+footer div {
+    width: 30em;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.5em;
+}
+
+footer div :nth-child(1) {
+    width: 15em;
+    float: left;
+    height: auto;
+}
+
+footer div :nth-child(2) {
+    width: 15em;
+    float: right;
+    margin: auto;
+}
