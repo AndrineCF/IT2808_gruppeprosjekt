@@ -4,6 +4,7 @@
         text = ''
     } = {}) {
         const dogPage = document.querySelector('#hund')
+        document.title = title
 
         if (dogPage) {
             dogPage.innerHTML = `
