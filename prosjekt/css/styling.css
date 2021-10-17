@@ -5,12 +5,54 @@
 
 html, body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .content {
     min-height: 100%;
 
     margin-bottom: -80px;
+}
+
+/* Content for website */
+
+#content-body {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* styling for fonts */
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+
+    /* Semi-bold */
+    font-weight: 600;
+}
+
+/* styling for imgs files */
+
+#logo {
+  margin-top: 20px;
 }
 
 /* used to make footer work */
