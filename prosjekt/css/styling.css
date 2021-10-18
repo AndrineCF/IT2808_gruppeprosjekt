@@ -93,7 +93,7 @@ p, ul, .button-storting, #kjonn, #alder{
     border-bottom: solid red 3px;
   }
   
-  .navbar a {
+  .navbar a, .dropbtn2 {
     float: right;
     display: block;
     color: #000;
@@ -103,13 +103,24 @@ p, ul, .button-storting, #kjonn, #alder{
     font-size: 17px;
   }
   
+  /* can't use class to change logo to right because it has lower priority */
   .navbar a:first-child {
     float: left;
   }
+
+  /* Have to do this sp that prevois css does not mess with a that is not the logo */
+  .navbar .dropdown2-content a {
+    float: none;
+  }
   
+
   .dropbtn2 {
-    background-color: #444444;
-    color: #FFFFFF;
+    
+    background-color: #fff;
+
+    white-space: nowrap;
+
+    /*
     margin: 0 1px 0 0;
     padding: 4px 3px;
     width: auto;
@@ -118,10 +129,12 @@ p, ul, .button-storting, #kjonn, #alder{
     text-align: center;
     white-space: nowrap;
     text-decoration: none;
+    */
     border: none;
   }
+
   .dropbtn2:hover, .dropbtn2:focus {
-    background-color: #000066;
+    background-color: grey;
     border: none;
   }
   .dropdown2 {
@@ -132,28 +145,21 @@ p, ul, .button-storting, #kjonn, #alder{
   .dropdown2-content {
     display: none;
     position: absolute;
-    padding: 0px;
-    width: auto;
-    min-width: 160px;
-    white-space: nowrap;
-    background: #DDDDDD;
+    background-color: #f1f1f1;
+    overflow: auto;
     z-index: 1;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #000000;
+
+    margin-top: 45px;
+
   }
   .dropdown2-content a {
-    float: left;
-    color: #000000;
-    padding: 2px 3px;
-    font: 10px arial;
     display: block;
+
+    margin-top: 0.5em;
+    height: auto;
   }
   .dropdown2 a:hover {
-    background: #000066;
-    color: #FFF;
-    border: none;
-    text-decoration: none;
+    background: grey;
   }
   .show {
     display:block;
