@@ -29,6 +29,10 @@ section {
   padding-bottom: 20px;
 }
 
+ul {
+  display: block;
+  margin-left: 20px;
+}
 
 /* styling for fonts */
 
@@ -42,7 +46,7 @@ h2 {
     font-weight: bold;
 }
 
-p {
+p, ul, .button-storting {
     font-size: 15px;
 
     /* Semi-bold */
@@ -54,6 +58,25 @@ p {
 #logo {
   margin-top: 20px;
 }
+
+/* styling navbar for storting */
+
+#navbar-storting {
+  border-top: #A31000 2px solid;
+  border-bottom: #A31000 2px solid;
+
+  width: 100%;
+  height: 40px;
+}
+
+.button-storting {
+  display: inline;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  padding-right: 20px;
+}
+
 
 /* used to make footer work */
 .push {
