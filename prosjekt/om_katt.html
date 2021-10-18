@@ -40,8 +40,20 @@
             
             <section>
                 <div id="navbar-storting">
-                    <button class="button-storting" id="kjonn">Kjønn <img src="img/down_arrow.png" alt="Pill ned"></button>
-                    <button class="button-storting" id ="alder">Alder <img src="img/down_arrow.png" alt="Pill ned"></button>
+                    <label for="kjonn">
+                        <select name="kjonn" id="kjonn">
+                            <option value="" disabled selected hidden>Kjønn</option>
+                            <option value="hun">Hun</option>
+                            <option value="han">Han</option>
+                        </select>
+                    </label>
+                    <label for="alder">
+                        <select name="alder" id="alder">
+                            <option value="" disabled selected hidden>Kjønn</option>
+                            <option value="0-5">0-5</option>
+                            <option value="5-10">5-10</option>
+                        </select>
+                    </label>
                     <button class="button-storting">Allergivennlig</button>
                     <button class="button-storting">Barnevennlig</button>
                 </div>
