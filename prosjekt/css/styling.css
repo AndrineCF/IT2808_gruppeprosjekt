@@ -98,38 +98,34 @@ p, ul, .button-storting, #kjonn, #alder{
     display: block;
     color: #000;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: large;
+    padding: 1em;
   }
   
   /* can't use class to change logo to right because it has lower priority */
   .navbar a:first-child {
     float: left;
+    padding: 0;
+  }
+
+  .navbar a img {
+    height: auto;
+    width: auto;
+    max-height: 3rem;
+    margin: 0;
   }
 
   /* Have to do this sp that prevois css does not mess with a that is not the logo */
   .navbar .dropdown2-content a {
     float: none;
+    padding: 1em;
   }
   
 
   .dropbtn2 {
-    
     background-color: #fff;
-
     white-space: nowrap;
-
-    /*
-    margin: 0 1px 0 0;
-    padding: 4px 3px;
-    width: auto;
-    font: bold 10px arial;
-    cursor: pointer;
-    text-align: center;
-    white-space: nowrap;
-    text-decoration: none;
-    */
     border: none;
   }
 
@@ -141,6 +137,7 @@ p, ul, .button-storting, #kjonn, #alder{
     z-index: 30;
     float: right;
     overflow: hidden;
+    outline: none;
   }
   .dropdown2-content {
     display: none;
@@ -148,14 +145,10 @@ p, ul, .button-storting, #kjonn, #alder{
     background-color: #f1f1f1;
     overflow: auto;
     z-index: 1;
-
-    margin-top: 45px;
-
+    margin-top: 3rem;
   }
   .dropdown2-content a {
     display: block;
-
-    margin-top: 0.5em;
     height: auto;
   }
   .dropdown2 a:hover {
