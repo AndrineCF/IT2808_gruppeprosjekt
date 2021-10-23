@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head lang="nb-no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund - Fallback title</title>
+    <link rel="stylesheet" type="text/css" href="/css/hund.css"></link>
+    <script type="text/javascript" src="/js/create_dog_page.js"></script>
+    <script type="text/javascript" src="/js/image_slider.js"></script>
+</head>
+<body>
+    <noscript>This page requires Javascript activated in your browser</noscript>
+    <main id="hund" class="gallery"></main>
+    <script type="text/javascript">
+        createDog({
+            title: 'Raya',
+            text: `Lille frøken Milo (6,5 år) søker nå et nytt hjem da familien ikke har mulighet til å 
+passe henne lengre. Ny eier(e) bør være enslig eller par uten barn, som er klar for 
+å ta en tydelig lederrolle og bruke tid på hunden. Bør ha erfaring med hund fra før.
+ 
+Milo er veldig kompleks liten sak med mange sider og en stor personlighet. På en 
+side elsker hun å kose, enten under en dyne/teppe, eller som en del av sin eier og 
+helst ligge over hele ansiktet ditt. På en annen side er hun veldig territoriell og 
+beskyttende og bjeffer/knurrer til folk hun ikke kjenner. Hun kan også knurre til 
+eier som et tegn på at hun ikke ønsker oppmerksomhet, men uansett hvor mye vi 
+har tullet med henne så har hun aldri bitt. Utenom er hun helt stueren og gjør aldri 
+fra seg inne.
+ 
+Milo er veldig leken, energisk, lærevillig og turglad og tar fort til seg nye triks ved 
+bruk at positiv forsterkning som en godbit eller leke. Hun kommer på kommando, 
+stikker aldri av uten bånd, kan sitt/labb/ligg/spill død, men liker å dra litt når hun 
+går med bånd. Kan nok passe veldig bra til agility trening. Lange turer i marka er 
+ingen problem, men sliter litt mer i tett befolket byvandring - Dette har vi trent mer 
+på siste året så hun er på god vei.
+ 
+Sykdomshistorikken er upåklagelig, eneste problemet hun har hatt i løpet av sine 
+år er et kne som av og til hopper ut av ledd ved kraftig sving eller nedbremsing, 
+dette fikser Milo selv med å strekke ut foten, så er hun klar for action igjen.
+
+Ta kontakt hvis dette høres ut som hunden for dere.`
+        })
+
+        ImageSlider({
+            folder: 'hunder',
+            images: [
+                '1-1.jpg',
+                '1-2.jpg',
+                '1-3.jpg',
+                '1-4.jpg',
+                '1-5.jpg'
+            ]
+        })
+    </script>
+</body>
