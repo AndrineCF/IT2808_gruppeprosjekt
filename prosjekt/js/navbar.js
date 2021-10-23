@@ -1,6 +1,6 @@
 
 /* links to header */
-var nav = document.getElementsByClassName("navbar")[0];
+var navHeader = document.getElementsByClassName("navbar")[0];
 
 // create the a element
 var a = document.createElement("a");
@@ -18,7 +18,7 @@ a.appendChild(img);
 a.href = "forside.html"
 
 // adds a to the navbar
-nav.appendChild(a);
+navHeader.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
@@ -28,7 +28,7 @@ a.innerHTML = "Om oss";
 a.href = "om_oss.html"
 
 // adds a to the navbar
-nav.appendChild(a);
+navHeader.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
@@ -38,7 +38,7 @@ a.innerHTML = "Bidra";
 a.href = "bidra.html"
 
 // adds a to the navbar
-nav.appendChild(a);
+navHeader.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
@@ -48,7 +48,7 @@ a.innerHTML = "Fostering";
 a.href = "fosterhjem.html"
 
 // adds a to the navbar
-nav.appendChild(a);
+navHeader.appendChild(a);
 
 // create the div element that shall contain the dropdown
 var dropdownDiv = document.createElement("div");
@@ -116,7 +116,7 @@ dropdownContent.appendChild(a);
 dropdownDiv.appendChild(dropdownContent);
 
 // adds a to the navbar
-nav.appendChild(dropdownDiv);
+navHeader.appendChild(dropdownDiv);
 
 // adds mouseover to the button so that the content can be shown
 dropdownBtn.onmouseover = function(){

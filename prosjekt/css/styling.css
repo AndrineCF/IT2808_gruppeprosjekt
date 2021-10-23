@@ -6,12 +6,13 @@
 html, body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    height: 100%; /* needed for the footer to be at the bottom */
 }
 
-.content {
-    min-height: 100%;
-
-    margin-bottom: -80px;
+body {
+  /* flex is used so that the footer will always be at the bottom of the page */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Content for website */
@@ -22,6 +23,8 @@ html, body {
     margin-right: auto;
 
     font-family: 'Inter', sans-serif;
+
+    flex: 1 0 auto;
 }
 
 section {
@@ -84,10 +87,8 @@ p, ul, .button-storting, #kjonn, #alder{
 }
 
 
-  /* dropdown styling */
-
+/* dropdown styling */
 .navbar {
-    /*position: fixed;* husker ikke hva slags posisjon vi skulle ha */
     overflow: hidden;
     background-color: #fff;
     border-bottom: solid red 3px;
@@ -167,7 +168,8 @@ footer {
     background: #F9DCDC;
     border-top: 3px #000000 solid;  
     
-    position: sticky;
+    /* flex so that the footer is at the bottom */
+    flex-shrink: 0;
 }
 
 footer div {
