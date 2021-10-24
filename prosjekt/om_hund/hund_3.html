@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head lang="nb-no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund - Fallback title</title>
+    <link rel="stylesheet" type="text/css" href="../css/hund.css"></link>
+    <script type="application/javascript" src="../js/create_dog_page.js"></script>
+    <script type="application/javascript" src="../js/image_slider.js"></script>
+</head>
+<body>
+    <noscript>This page requires Javascript activated in your browser</noscript>
+    <main id="hund" class="gallery"></main>
+    <script type="text/javascript">
+        createDog({
+            title: 'Bamse',
+            text: `Basse (3 år) er en glatt håret labrador. Bamse trenger å komme til ett hjem med lidenskap for hund, uten barn, 
+hvor han får brukt både hodet og kropp masse. Basse har noen utfordringer, og vil kreve en innsats 
+fra nye eiere. Dersom det ikke er det du ser etter, er ikke Basse hunden for deg. 
+Grunnet tidligere problem med barn er det ønskelig at familien ikke har barn. 
+
+Basse er en energisk og oppmerksom hund som lærer fort. Han elsker å trene, og 
+blir lett motivert av godbiter og entusiasme. Han er også en fantastisk turkamerat. 
+Utfordringene til Basse er i hovedsak stressrelatert, og han kan utagere aggressivt. 
+Basse liker ikke å være alene hjemme, men dette er under trening. 
+
+Om du er en person med lidenskap for hund, som ønsker en treningskamerat, 
+vil vi gjerne høre fra deg da dette er en hund som krever litt ekstra.
+`
+        })
+
+        ImageSlider({
+            folder: 'hunder',
+            pathPrefix: '..',
+            images: [
+                '3-1.jpg',
+                '3-2.jpg',
+                '3-3.jpg',
+                '3-4.jpg'
+            ]
+        })
+    </script>
+</body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head lang="nb-no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund - Fallback title</title>
+    <link rel="stylesheet" type="text/css" href="../css/hund.css"></link>
+    <script type="text/javascript" src="../js/create_dog_page.js"></script>
+    <script type="text/javascript" src="../js/image_slider.js"></script>
+</head>
+<body>
+    <noscript>This page requires Javascript activated in your browser</noscript>
+    <main id="hund" class="gallery"></main>
+    <script type="text/javascript">
+        createDog({
+            title: 'Sniff',
+            text: `Sniff (4 år) er en trivelig hund som elsker oppmerksomhet og kos. Han er veldig glad i å gå turer, og sier ikke nei til lange turer og fjellturer. Han er snill, men kan bli litt aggressiv dersom han ikke føler seg trygg. Sniff er selskapssjuk å har sin plass rett nedenfor sofaen når du sitter der, 
+han er ikke vant med å ligge i sengen men har sitt hjørne på soverommet der 
+han trives godt så lenge han er sammen med deg. Han klarer seg også hjemme alene en vanlig arbeidsdag. 
+
+Sniff varsler på lyder han hører utenfor og hvis det kommer folk. 
+Han har tidligere bodd med små barn noe han er ikke spesielt glad i da han virker usikker 
+på dem og ikke helt finner sin plass. Han trenger dermed noen som helst ikke har små barn, 
+som er tålmodig og som har tid til å gi han lek, kos og oppmerksomhet. 
+
+Tror du/dere at Sniff passer inn i deres familie? Ta kontakt.`
+        })
+
+        ImageSlider({
+            folder: 'hunder',
+            pathPrefix: '..',
+            images: [
+                '2-1.jpg',
+                '2-2.jpg'
+            ]
+        })
+    </script>
+</body>
