@@ -2,8 +2,79 @@
 <head lang="nb-no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopsjon</title>
+    <link rel="stylesheet" type="text/css" href="/css/styling.css"></link>
+    <style>
+        * {
+            line-height: 165%;
+        }
+
+        h1, h2 {
+            margin: 0 0 .25em 0;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            max-width: 60ch;
+            margin: auto;
+        }
+
+        li + li {
+            margin-top: 1em;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <main>
+        <h1>Om adopsjon</h1>
+        <p> Adopsjon legger grunnlaget for å kunne gi et dyr et nytt hjem, 
+            og på denne måten gi dyret en ny sjanse i livet. Ved adopsjon gjennom oss, 
+            vil vi hele tiden vurdere søker oppmot hvilke dyr som trenger et nytt hjem. 
+            Dette for å sikre at dyret flytter til et hjem med trygge rammer og med mennesker 
+            rundt seg som gir den omsorgen og hjelpen den har behov for. Vi oppfordrer alle til å 
+            lese nøye gjennom kravene som stilles og om hva det innebærer å adopere et dyr før 
+            søknaden sendes. 
+        </p>
+        <h2>Hvilke krav stilles det av deg som adoptiv-forelder?</h2>
+            <ul>
+                <li>
+                    Du må være glad i dyr, omgjengelig, i tillegg til å ha tid til å ta vare på et dyr. 
+                    Både katter og hunder kan kreve flere timer av tiden din hver dag. 
+                    Ved en hverdag med mye reising, må man ha noen som kan passe på dyret når man er bortreist.
+                </li>
+                <li>
+                    Du må være forberedt på å gi en levende skapning et godt liv i mange år frem i tid. 
+                    Katter kan leve i opptil 15-20 år, mens hunder lever i opptil 10-13 år. 
+                </li>
+                <li>
+                    Ved adopsjon av katter stilles det krav om at man skal ha et tilstrekkelig uteområde, 
+                    som katten vil trives i.
+                </li>
+                <li>
+                    Alle dyr adoptert gjennom oss skal gjennom en årlig helsesjekk hos veterinæren. 
+                    Dokumentasjon ettersendes til organisasjonen. 
+                </li>
+            </ul>
+            <h2>Fra søknad til adopsjon</h2>
+            <p>Når du har bestemt deg for å søke, må søknadsskjema fylles ut så detaljert som mulig. 
+                Vi vil da ta kontakt med aktuelle søkere for en samtale og mer utdypende informasjon 
+                rundt spørsmålene i søknaden. Videre vil vi forsøke å matche kanditaten med en av våre 
+                tilgjengelige dyr. Søkeren vil da få tilsendt et tilbud via e-post som må besvares 
+                innen 7 dager. I noen tilfeller vil det også være aktuelt å ta kontakt via telefon. Det avtales da dato for 
+                adopsjon og veien videre med oppfølging.
+            </p>
+            <div id="buttons">
+                <button onclick="hund">Katt</button>
+                <button>Hund</button>
+            </div>
     </main>
 </body>

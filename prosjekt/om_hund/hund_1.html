@@ -2,16 +2,16 @@
 <head lang="nb-no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hund - Fallback title</title>
-    <link rel="stylesheet" type="text/css" href="/css/hund.css"></link>
-    <script type="text/javascript" src="/js/create_dog_page.js"></script>
-    <script type="text/javascript" src="/js/image_slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/hund.css"></link>
+    <script type="application/javascript" src="../js/create_dog_page.js"></script>
+    <script type="application/javascript" src="../js/image_slider.js"></script>
 </head>
 <body>
     <noscript>This page requires Javascript activated in your browser</noscript>
     <main id="hund" class="gallery"></main>
     <script type="text/javascript">
         createDog({
-            title: 'Raya',
+            title: 'Milo',
             text: `Lille frøken Milo (6,5 år) søker nå et nytt hjem da familien ikke har mulighet til å 
 passe henne lengre. Ny eier(e) bør være enslig eller par uten barn, som er klar for 
 å ta en tydelig lederrolle og bruke tid på hunden. Bør ha erfaring med hund fra før.
@@ -40,6 +40,7 @@ Ta kontakt hvis dette høres ut som hunden for dere.`
 
         ImageSlider({
             folder: 'hunder',
+            pathPrefix: '..',
             images: [
                 '1-1.jpg',
                 '1-2.jpg',

@@ -36,7 +36,7 @@ html, body, main {
     height: auto;
     width: 100%;
     object-fit: cover;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .gallery-toggles {
@@ -96,7 +96,7 @@ html, body, main {
 
     display: flex;
     justify-content: center;
-    padding: 4rem;
+    padding: 2rem;
     background-color: hsla(0, 0%, 0%, .4);
     z-index: 999;
     overflow: hidden;
@@ -104,7 +104,7 @@ html, body, main {
 
 
 .gallery-modal > img {
-    height: 80%;
+    height: 100%;
     object-fit: contain;
 }
 
