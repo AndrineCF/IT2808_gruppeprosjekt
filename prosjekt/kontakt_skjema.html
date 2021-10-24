@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Kontaktskjema</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+      <link rel="stylesheet" href="styling.css">
+    </head>
+
+    <body>
+
+      <!-- Navbar -->
+
+      <div id="content-body">
+        <section>
+          <h1>Kontaktskjema</h1>
+        </section>
+      </div>
+
+      <div class="container">
+	       <form action="takk_for_soknad.html" target="_blank">
+           <div class="row">
+             <div class="col-20">
+               <label for="navn">Navn</label>
+             </div>
+             <div class="col-80">
+               <input type="text" id="navn" name="navn" placeholder="Ditt navn..." required>
+             </div>
+             <div class="col-10">
+               <p>*</p>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-20">
+               <label for="adresse">Adresse</label>
+             </div>
+             <div class="col-80">
+               <input type="text" id="adresse" name="adresse" placeholder="Din adresse..." required>
+             </div>
+             <div class="col-10">
+               <p>*</p>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-20">
+               <label for="tlf">Telefon</label>
+             </div>
+             <div class="col-80">
+               <input type="tel" id="tlf" name="tlf" placeholder="Ditt telefonnummer..." required>
+             </div>
+             <div class="col-10">
+               <p>*</p>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-20">
+               <label for="email">E-post</label>
+             </div>
+             <div class="col-80">
+               <input type="email" id="email" name="email" placeholder="Din e-postadresse..." required>
+             </div>
+             <div class="col-10">
+               <p>*</p>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-20">
+               <label for="dyr">Hvilket dyr?</label>
+             </div>
+             <div class="col-80">
+               <div class="box1">
+                 <label for="katt">Katt</label>
+               </div>
+               <div class="box2">
+                 <input type="radio" id="katt" name="dyr" value="Katt" required>
+               </div>
+               <div class="box3">
+                 <label for="hund">Hund</label>
+               </div>
+               <div class="box4">
+                 <input type="radio" id="hund" name="dyr" value="Hund" required>
+               </div>
+               <div class="col-radio">
+                 <p>*</p>
+               </div>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-20">
+               <label for="fosad">Fostring eller adopsjon?</label>
+             </div>
+             <div class="col-80">
+               <div class="box1">
+                 <label for="fostring">Fostring</label>
+              </div>
+              <div class="box2">
+                 <input type="radio" id="fostring" name="fosad" value="Fostring" required>
+               </div>
+               <div class="box3">
+                <label for="adopsjon">Adopsjon</label>
+              </div>
+              <div class="box4">
+                <input type="radio" id="adopsjon" name="fosad" value="Adopsjon" required>
+              </div>
+              <div class="col-radio">
+                <p>*</p>
+              </div>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-20">
+               <label for="annet">Annet</label>
+             </div>
+             <div class="col-80">
+               <textarea id="annet" name="annet" style="height:150px" placeholder="Annet..."></textarea>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-80">
+               <div class="box5">
+                 <input type="submit" value="Send søknad >">
+               </div>
+             </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer"></footer>
+
+      <!-- Script -->
+      <script src="kontakt_skjema.js"></script>
+    </body>
+</html>
