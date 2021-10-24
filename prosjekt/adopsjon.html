@@ -2,8 +2,8 @@
 <head lang="nb-no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopsjon</title>
-    <link rel="stylesheet" type="text/css" href="/css/styling.css"></link>
-    <style>
+    <link rel="stylesheet" type="text/css" href="css/styling.css"></link>
+    <!--<style>
         * {
             line-height: 165%;
         }
@@ -31,20 +31,27 @@
             display: flex;
             justify-content: center;
         }
-    </style>
+    </style>-->
 </head>
 <body>
-    <main>
-        <h1>Om adopsjon</h1>
-        <p> Adopsjon legger grunnlaget for å kunne gi et dyr et nytt hjem, 
-            og på denne måten gi dyret en ny sjanse i livet. Ved adopsjon gjennom oss, 
-            vil vi hele tiden vurdere søker oppmot hvilke dyr som trenger et nytt hjem. 
-            Dette for å sikre at dyret flytter til et hjem med trygge rammer og med mennesker 
-            rundt seg som gir den omsorgen og hjelpen den har behov for. Vi oppfordrer alle til å 
-            lese nøye gjennom kravene som stilles og om hva det innebærer å adopere et dyr før 
-            søknaden sendes. 
-        </p>
-        <h2>Hvilke krav stilles det av deg som adoptiv-forelder?</h2>
+    <header>
+        <div class="navbar"></div>
+    </header>
+    <main id ="content-body">
+        <header>
+            <img style="width: 100%; max-height: 20em; object-fit: cover; object-position: left 30%;" src="images/hunder/3-3.jpg" alt="Bilde av en hund"></img>
+            <h1>Om adopsjon</h1>
+        </header>
+        <article>
+            <p> Adopsjon legger grunnlaget for å kunne gi et dyr et nytt hjem, 
+                og på denne måten gi dyret en ny sjanse i livet. Ved adopsjon gjennom oss, 
+                vil vi hele tiden vurdere søker oppmot hvilke dyr som trenger et nytt hjem. 
+                Dette for å sikre at dyret flytter til et hjem med trygge rammer og med mennesker 
+                rundt seg som gir den omsorgen og hjelpen den har behov for. Vi oppfordrer alle til å 
+                lese nøye gjennom kravene som stilles og om hva det innebærer å adopere et dyr før 
+                søknaden sendes. 
+            </p>
+            <h2>Hvilke krav stilles det av deg som adoptiv-forelder?</h2>
             <ul>
                 <li>
                     Du må være glad i dyr, omgjengelig, i tillegg til å ha tid til å ta vare på et dyr. 
@@ -76,5 +83,9 @@
                 <button onclick="hund">Katt</button>
                 <button>Hund</button>
             </div>
+        </article>
     </main>
+    <footer id="footer"></footer>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
