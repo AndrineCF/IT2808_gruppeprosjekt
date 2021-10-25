@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head lang="nb-no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund - Fallback title</title>
+    <link rel="stylesheet" type="text/css" href="../css/hund.css"></link>
+    <script type="application/javascript" src="../js/create_dog_page.js"></script>
+    <script type="application/javascript" src="../js/image_slider.js"></script>
+</head>
+<body>
+    <noscript>This page requires Javascript activated in your browser</noscript>
+    <main id="hund" class="gallery"></main>
+    <script type="text/javascript">
+        createDog({
+            title: 'Maja',
+            text: `Maja (9 år) er en tispe som er en lite krevende hund, og livlig hund. 
+Hun er en inne hund som er inne største delen av dagen og klarer seg fint noen timer alene. 
+Kunne gjerne ligge på sofaen sammen med familien i timevis men er også en bra vakthund som gir 
+beskjed hvis noen sniker rund huset om natten ellers besøk står foran døren så gi hun beskjed.
+
+Maja er ellers rolig og bjeffer nesten aldri. Hun elsker turer, og sier ikke nei til 
+lange turer og fjellturer. Maja blir spesielt blid når han møter andre hunder ute og elsker 
+å leke med andre hunder, da helst tisper.
+
+Maja passer like bra til familier med store barn som til enslige 
+damer/ herrer som har mye fritid og erfaring med hunder. 
+
+Vil dere bli bedre kjent med Maja? Ta kontakt. 
+`
+        })
+
+        ImageSlider({
+            folder: 'hunder',
+            pathPrefix: '..',
+            images: [
+                '3-1.jpg',
+                '3-2.jpg',
+                '3-3.jpg',
+                '3-4.jpg'
+            ]
+        })
+    </script>
+</body>

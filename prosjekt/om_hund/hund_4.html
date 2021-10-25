@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head lang="nb-no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund - Fallback title</title>
+    <link rel="stylesheet" type="text/css" href="../css/hund.css"></link>
+    <script type="application/javascript" src="../js/create_dog_page.js"></script>
+    <script type="application/javascript" src="../js/image_slider.js"></script>
+</head>
+<body>
+    <noscript>This page requires Javascript activated in your browser</noscript>
+    <main id="hund" class="gallery"></main>
+    <script type="text/javascript">
+        createDog({
+            title: 'Oliver',
+            text: `Oliver (12 år) er en ukastrert hannhund som er utrolig snill og god. 
+Selv med en så høy alder, merkes ikke dette overhode på blant annet aktivitetsnivå. 
+Han er lærevillig, men han prøver også å lure seg unna slik at man må passe på. 
+Han er bare snill, aldri aggressiv mot hverken mennesker eller dyr. 
+Han er også vandt med andre dyr rundt seg, bor nå med katt og marsvin, noe skeptisk til hest.
+
+Han er en aktiv hund som er den perfekte turkompis og lekekamerat. Elsker tur, både med sykkel, 
+på ski eller bare gå. Inne forvandles han til en skikkelig kosegutt. Bjeffer ikke, 
+men kan pipe litt hvis han blir fortvilet. Kan fint være alene en stund, og kan sove ute om natten, 
+men bør da belønnes med en skikkelig tur og litt kos. Kan gå tidvis pent i bånd med en godbit, og 
+på steder han er kjent med, men er mest vane med å trekke i sele. Lærevillig og glad hund!  
+
+Høres Oliver ut som en trivelig hund? Ta kontakt.`
+        })
+
+        ImageSlider({
+            folder: 'hunder',
+            pathPrefix: '..',
+            images: [
+                '3-1.jpg',
+                '3-2.jpg',
+                '3-3.jpg',
+                '3-4.jpg'
+            ]
+        })
+    </script>
+</body>
