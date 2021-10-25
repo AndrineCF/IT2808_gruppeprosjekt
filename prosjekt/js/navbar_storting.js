@@ -1,18 +1,18 @@
 // Get the which animel site it is
-var titleAnimal = document.title.split(" ")[0].toLowerCase()
+let titleAnimal = document.title.split(" ")[0].toLowerCase()
 
 // Getting the content body
-var contentBodyEl = document.getElementById("content-body")
+const contentBodyEl = document.getElementById("content-body")
 
 // Creating elements
-var sectionEl = document.createElement("section")
-var navbarEl = document.createElement("div")
+let sectionEl = document.createElement("section")
+let navbarEl = document.createElement("div")
 
 // Set styling/id to the navbar
 navbarEl.id = "navbar-storting"    
 
 // Crating json data for katt and dog in select meny
-var jsonData = {
+const jsonData = {
     "selectMeny": {
         "hund": {
             "kjonn" : ["Hun", "Han"],
