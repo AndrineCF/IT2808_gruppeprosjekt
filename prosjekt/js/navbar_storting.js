@@ -85,6 +85,7 @@ function creatingButtons(navbar, buttons) {
         let labelEl = document.createElement("label")
         labelEl.setAttribute("for", button.toLowerCase())
 
+        //creating button
         let buttonEl = document.createElement("button")
         buttonEl.setAttribute("name", button.toLowerCase())
         buttonEl.value = button.toLowerCase()
@@ -92,13 +93,17 @@ function creatingButtons(navbar, buttons) {
         button.id = button.toLowerCase()
         buttonEl.classList.add("button-storting")
 
+        // add it to navbar
         labelEl.appendChild(buttonEl)
         navbar.appendChild(labelEl)
     }
 
 }
 
+
 createSelectMeny(navbarEl, jsonData["selectMeny"][titleAnimal])
 creatingButtons(navbarEl, jsonData["button"])
+
+// add created elemente to new section in content body
 sectionEl.append(navbarEl)
 contentBodyEl.append(sectionEl)
