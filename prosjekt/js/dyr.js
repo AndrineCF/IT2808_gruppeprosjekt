@@ -2,7 +2,7 @@ var jsonDyr = {
     "hund": [
         {
         "navn": "Milo",
-        "img": "./images/hunder/1-1.jpg",
+        "img": "./img/hunder/1-1.jpg",
         "alder": 6,
         "kjonn": "hun",
         "rase": "???",
@@ -13,7 +13,7 @@ var jsonDyr = {
         },
         {
         "navn": "Sniff",
-        "img": "./images/hunder/2-1.jpg",
+        "img": "./img/hunder/2-1.jpg",
         "alder": 4,
         "kjonn": "han",
         "rase": "???",
@@ -24,7 +24,7 @@ var jsonDyr = {
         },
         {
         "navn": "Bamse",
-        "img": "./images/hunder/3-1.jpg",
+        "img": "./img/hunder/3-1.jpg",
         "alder": 3,
         "kjonn": "han",
         "rase": "labrador",
@@ -35,7 +35,7 @@ var jsonDyr = {
         },
         {
         "navn": "Oliver",
-        "img": "./images/hunder/1-1.jpg",
+        "img": "./img/hunder/1-1.jpg",
         "alder": 12,
         "kjonn": "han",
         "rase": "???",
@@ -46,7 +46,7 @@ var jsonDyr = {
         },
         {
         "navn": "Maja",
-        "img": "./images/hunder/1-1.jpg",
+        "img": "./img/hunder/1-1.jpg",
         "alder": 9,
         "kjonn": "hun",
         "rase": "???",
