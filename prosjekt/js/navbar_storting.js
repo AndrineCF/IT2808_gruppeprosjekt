@@ -67,7 +67,7 @@ function createSelectMeny(navbar, animal){
         for(i in animal[meny]) {
             console.log(i)
             let optionEl = document.createElement("option")
-            optionEl.value = animal[meny][i]
+            optionEl.value = animal[meny][i].toLowerCase()
             optionEl.innerText = animal[meny][i]
 
             selectEl.appendChild(optionEl)
@@ -88,9 +88,9 @@ function creatingButtons(navbar, buttons) {
         //creating button
         let buttonEl = document.createElement("button")
         buttonEl.setAttribute("name", button.toLowerCase())
-        buttonEl.value = button.toLowerCase()
+        buttonEl.value = "ja"
         buttonEl.innerText = button
-        button.id = button.toLowerCase()
+        buttonEl.id = button.toLowerCase()
         buttonEl.classList.add("button-storting")
 
         // add it to navbar
