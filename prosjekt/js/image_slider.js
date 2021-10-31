@@ -1,103 +1,116 @@
+/**
+ * Global funksjons wrap, IIFE ( imediate invoked function expression )
+ * Se: @url https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+ * 
+ */
 ;(function() {
+     /**
+     * Global metode på vinduet for å lage ImageSlider
+     */
     window.ImageSlider = function({ folder = '', images = [], pathPrefix = '' } = {}) {
-        const image = document.querySelector('.gallery-images > img')
-        const [previous, next] = Array.from(document.querySelectorAll('.gallery-toggles > button'))
+        const image = document.querySelector('.gallery-images > img') // finn bildet
+        const [previous, next] = Array.from(document.querySelectorAll('.gallery-toggles > button')) // finn toggles
     
-        let currentImageIndex = 0
-        let imageRef = null
-        let buttonRef = null
+        
+        let currentImageIndex = 0 // hvilket bilde er vi på av variablen bilder
+        let imageRef = null // referanse til bildet når modal er aktivert
+        let buttonRef = null // referanse til button når modal er aktivert
 
+        // hjelpe funksjon for å oppdatere bilde vi er på
         function setSrcOnImage(index) {
             currentImageIndex = index
 
-            previous.style.visibility = index === 0 ? 'hidden' : ''
-            next.style.visibility = index === images.length - 1 ? 'hidden' : ''
+            previous.style.visibility = index === 0 ? 'hidden' : '' // css regler for å vise / skjule buttton hvis relevant
+            next.style.visibility = index === images.length - 1 ? 'hidden' : '' // css regler for å vise / skjule buttton hvis relevant
 
-            image.setAttribute('src', `${pathPrefix}/images/${folder}/${images[index]}`)
+            image.setAttribute('src', `${pathPrefix}/img/${folder}/${images[index]}`) // oppdater til rett bilde
             
-            if (imageRef) {
-                imageRef.setAttribute('src', `${pathPrefix}/images/${folder}/${images[index]}`)
+            if (imageRef) { // Oppdater modal sitt bilde hvis åpen
+                imageRef.setAttribute('src', `${pathPrefix}/img/${folder}/${images[index]}`)
             }
         }
 
-        setSrcOnImage(currentImageIndex)
+        setSrcOnImage(currentImageIndex) // Initielt kall for å sette bilde
     
         next.onclick = function(e) {
-            e.stopPropagation()
-            setSrcOnImage(Math.min(images.length - 1, currentImageIndex + 1))
+            e.stopPropagation() // Vi vil ikke at eventet skal boble oppover og påvirke noe annet
+            setSrcOnImage(Math.min(images.length - 1, currentImageIndex + 1)) // Bruker matte for å trygge at vi ikke går utenfor antall bilder i lista
         }
         
         previous.onclick = function(e) {
             e.stopPropagation()
-            setSrcOnImage(Math.max(0, currentImageIndex - 1))
+            setSrcOnImage(Math.max(0, currentImageIndex - 1)) // Bruker matte for å trygge at vi ikke går utenfor antall bilder i lista
         }
 
         window.addEventListener('keydown', (e) => {
-            console.log(e.key)
+            // beskytter for at key er en faktisk string for metodene under
+            if (!(typeof e.key === 'string')) {
+                return 
+            }
+
             if (e.key.toLowerCase() === 'arrowleft') {
-                e.preventDefault()
-                previous.click()
+                e.preventDefault() // hindrer at default skjer
+                previous.click() // kaller klikk metode på piler
             }
 
             if (e.key.toLowerCase() === 'arrowright') {
                 e.preventDefault()
-                next.click()    
+                next.click() // kaller klikk metode på piler
             }
 
             if (e.key.toLowerCase() === 'escape' && imageRef !== null) {
                 e.preventDefault()
-                buttonRef && buttonRef.click()
+                buttonRef && buttonRef.click() // kaller klikk metode ved esc hvis modal er åpen er buttonRef satt
             }
         })
 
-        
+        // Håndter klikk på bildet for å åpne modal
         image.onclick = function() {
+            // Beskyttelse for å sjekke at faktisk modal finnes
             if (document.querySelector('.gallery-modal')) {
                 return 
             }
 
+            // Lag noder og klon bildet sin node dypt
             const modal = document.createElement('div')
             const button = document.createElement('button')
             const clonedImage = image.cloneNode(true)
 
+            // oppdater referanser til elementer
             imageRef = clonedImage
             buttonRef = button
 
+            // Metode for å lukke modal basert på klikk
             const closeModal = function(e) {
-                const element = document.querySelector('.gallery-modal')
-
-                if (!element) {
-                    return    
-                }
-
                 if (e.target === image) {
                     return
                 }
 
+                window.removeEventListener('click', closeModal)
+
+                // Fjern referanse
                 imageRef = null
                 buttonRef = null
-                document.body.removeChild(element)
+                document.body.removeChild(modal)
             }
                 
-            button.onclick = function closeModal() {
-                document.body.removeChild(modal)
-                window.removeEventListener('click', closeModal)
-                imageRef = null
-                buttonRef = null
-            }
+            // Metode for ¨å lukke modal for knapp
+            button.onclick = closeModal
 
+            // Lytter etter klikk for å lukke modal
             window.addEventListener('click', closeModal)
 
+            // Tilordner attributter
             button.className = 'gallery-modal-close'
             button.innerText = 'Lukk'
 
-            modal.appendChild(button)
             modal.className = 'gallery-modal'
 
+            // Setter inn modal i document.body
             document.body.appendChild(modal)
 
-            modal.appendChild(button)
-            modal.appendChild(clonedImage)
+            // Setter inn barn av modal
+            modal.append(button, clonedImage)
         }
     }
 })();

@@ -9,6 +9,12 @@ html, body {
     height: 100%; /* needed for the footer to be at the bottom */
 }
 
+
+:root {
+  --button-background-color: #C41200;
+  --button-color: white;
+}
+
 body {
   /* flex is used so that the footer will always be at the bottom of the page */
   display: flex;
@@ -25,6 +31,10 @@ body {
     font-family: 'Inter', sans-serif;
 
     flex: 1 0 auto;
+}
+
+p, li {
+  line-height: 180%;
 }
 
 section {
@@ -188,6 +198,8 @@ footer {
 }
 
 footer div {
+    /* display: flex;
+    align-items: center; Maybe this? */
     width: 30em;
     text-align: center;
     margin: auto;
