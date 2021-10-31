@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <head lang="nb-no">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopsjon</title>
     <link rel="stylesheet" type="text/css" href="css/styling.css"></link>
-    <!--<style>
-        * {
-            line-height: 165%;
+    <style>
+        #front-page {
+            width: 100%; 
+            max-height: 20em; 
+            
+            /** Needs modern browser to work correctly, not IE */
+            object-fit: cover; 
+            object-position: left 30%;
         }
 
-        h1, h2 {
-            margin: 0 0 .25em 0;
+        /** Styling specific to this page only */
+        header > h1 {
+            --margin: .5em;
+            margin-top: var(--margin);
+            margin-bottom: var(--margin);
         }
 
-        p {
-            text-align: justify;
+        article {
+            margin-bottom: 3rem;
         }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            max-width: 60ch;
-            margin: auto;
-        }
-
-        li + li {
+        article > * + * {
             margin-top: 1em;
         }
 
-        #buttons {
-            display: flex;
-            justify-content: center;
+        article > p, article li {
+            font-weight: normal;
         }
-    </style>-->
+
+        button {
+            border: none !important;
+            outline: none !important;
+
+            background-color: var(--button-background-color);
+            color: var(--button-color);
+
+            padding: .5em 1em;
+            border-radius: .25em;
+            cursor: pointer;
+
+            opacity: 1;
+
+            transition: opacity 200ms ease;
+        }
+
+        button:hover {
+            opacity: .8;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="navbar"></div>
-    </header>
-    <main id ="content-body">
+    </nav>
+    <main id="content-body">
         <header>
-            <img style="width: 100%; max-height: 20em; object-fit: cover; object-position: left 30%;" src="images/hunder/3-3.jpg" alt="Bilde av en hund"></img>
+            <img id="front-page" src="img/hunder/3-3.jpg" alt="Bilde av en hund"></img>
             <h1>Om adopsjon</h1>
         </header>
         <article>
@@ -80,7 +101,7 @@
                 adopsjon og veien videre med oppfølging.
             </p>
             <div id="buttons">
-                <button onclick="hund">Katt</button>
+                <button>Katt</button>
                 <button>Hund</button>
             </div>
         </article>
