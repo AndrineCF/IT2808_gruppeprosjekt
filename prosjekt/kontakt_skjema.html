@@ -14,67 +14,67 @@
         <div class="navbar"></div>
       </header>
 
-      <div id="content-body">
+            <div id="content-body">
         <section>
           <h1>Kontaktskjema</h1>
         </section>
-      </div>
 
-      <div class="container">
+
+      <div class="containerskjema">
 	       <form action="takk_for_soknad.html" target="_blank">
            <div class="row">
-             <div class="col-20">
+             <div class="kolonne-venstre">
                <label for="navn">Navn</label>
              </div>
-             <div class="col-80">
+             <div class="kolonne-midt">
                <input type="text" id="navn" name="navn" placeholder="Ditt navn..." required>
              </div>
-             <div class="col-10">
+             <div class="kolonne-høyre">
                <p>*</p>
              </div>
            </div>
 
            <div class="row">
-             <div class="col-20">
+             <div class="kolonne-venstre">
                <label for="adresse">Adresse</label>
              </div>
-             <div class="col-80">
+             <div class="kolonne-midt">
                <input type="text" id="adresse" name="adresse" placeholder="Din adresse..." required>
              </div>
-             <div class="col-10">
+             <div class="kolonne-høyre">
                <p>*</p>
              </div>
            </div>
 
            <div class="row">
-             <div class="col-20">
+             <div class="kolonne-venstre">
                <label for="tlf">Telefon</label>
              </div>
-             <div class="col-80">
+             <div class="kolonne-midt">
                <input type="tel" id="tlf" name="tlf" placeholder="Ditt telefonnummer..." required>
              </div>
-             <div class="col-10">
+             <div class="kolonne-høyre">
                <p>*</p>
              </div>
            </div>
 
            <div class="row">
-             <div class="col-20">
+             <div class="kolonne-venstre">
                <label for="email">E-post</label>
              </div>
-             <div class="col-80">
+             <div class="kolonne-midt">
                <input type="email" id="email" name="email" placeholder="Din e-postadresse..." required>
              </div>
-             <div class="col-10">
+             <div class="kolonne-høyre">
                <p>*</p>
              </div>
            </div>
 
            <div class="row">
-             <div class="col-20">
+             <div class="kolonne-venstre">
                <label for="dyr">Hvilket dyr?</label>
              </div>
-             <div class="col-80">
+             <div class="kolonne-midt">
                <div class="box1">
                  <label for="katt">Katt</label>
                </div>
@@ -87,17 +87,17 @@
                <div class="box4">
                  <input type="radio" id="hund" name="dyr" value="Hund" required>
                </div>
-               <div class="col-radio">
+               <div class="kolonne-radio">
                  <p>*</p>
                </div>
              </div>
            </div>
 
            <div class="row">
-             <div class="col-20">
+             <div class="kolonne-venstre">
                <label for="fosad">Fostring eller adopsjon?</label>
              </div>
-             <div class="col-80">
+             <div class="kolonne-midt">
                <div class="box1">
                  <label for="fostring">Fostring</label>
               </div>
@@ -110,29 +110,30 @@
               <div class="box4">
                 <input type="radio" id="adopsjon" name="fosad" value="Adopsjon" required>
               </div>
-              <div class="col-radio">
+              <div class="kolonne-radio">
                 <p>*</p>
               </div>
              </div>
            </div>
 
            <div class="row">
-             <div class="col-20">
+             <div class="kolonne-venstre">
                <label for="annet">Annet</label>
              </div>
-             <div class="col-80">
+             <div class="kolonne-midt">
                <textarea id="annet" name="annet" style="height:150px" placeholder="Annet..."></textarea>
              </div>
            </div>
 
            <div class="row">
-             <div class="col-80">
+             <div class="kolonne-midt">
                <div class="box5">
-                 <input type="submit" value="Send søknad >">
+                 <input type="submit" value="Send søknad >" onclick="validateform()">
                </div>
              </div>
           </div>
         </form>
+      </div>
       </div>
 
       <!-- Footer -->
