@@ -265,6 +265,8 @@ input[type=text], textarea{
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
 }
 input[type=tel], textarea{
   width: 100%;
@@ -272,6 +274,8 @@ input[type=tel], textarea{
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
 }
 input[type=email], textarea{
   width: 100%;
@@ -279,10 +283,14 @@ input[type=email], textarea{
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
 }
 input[type=radio], textarea{
   width: 100%;
   border: 1px solid black;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
 }
 input[type=textarea], textarea{
   width: 100%;
@@ -290,12 +298,17 @@ input[type=textarea], textarea{
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
 }
 
 /* Styler input-labels */
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* Styler send-søknad-knapp */
@@ -307,32 +320,37 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* Styler container */
-.container {
+.containerskjema {
   width: 1000px;
   margin: auto;
   background-color: white;
   padding: 10px;
+  position: relative;
+  left: 100px;
 }
 
 /* Float-column for labels */
-.col-20 {
+.kolonne-venstre {
   float: left;
   width: 19%;
   margin-top: 6px;
 }
 
 /* Float-column for inputs */
-.col-80 {
+.kolonne-midt {
   float: left;
   width: 50%;
   margin-top: 6px;
 }
 
 /* Float-column for asterisk */
-.col-10 {
+.kolonne-høyre {
   float: left;
   width: 1%;
   margin-top: 22.5px;
@@ -341,7 +359,7 @@ input[type=submit] {
 }
 
 /* Float-column for asterisk etter radio */
-.col-radio {
+.kolonne-radio {
   float: left;
   width: 1%;
   margin-top: 22.5px;
@@ -405,4 +423,13 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Styler liste på om fostring */
+.listefostring {
+  font-weight: 600;
+  font-size: 15px;
 }
