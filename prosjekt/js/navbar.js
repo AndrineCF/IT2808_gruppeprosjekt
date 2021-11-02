@@ -62,7 +62,7 @@ var dropdownBtn = document.createElement("button");
 // gives the dropdown the class dropdown2
 dropdownBtn.classList = "dropbtn2";
 
-dropdownBtn.innerHTML = "Adopsjon";
+dropdownBtn.innerHTML = "Adopsjon <img src='img/down_arrow.png' alt='V'>";
 
 // adds dropdownBtn to dropdownDiv
 dropdownDiv.appendChild(dropdownBtn);
