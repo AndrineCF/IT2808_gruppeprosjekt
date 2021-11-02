@@ -89,7 +89,7 @@ function creatingButtons(navbar, buttons) {
         let buttonEl = document.createElement("button")
         buttonEl.setAttribute("name", button.toLowerCase())
         buttonEl.value = "ja"
-        buttonEl.innerText = button
+        buttonEl.innerText = button.charAt(0).toUpperCase() + button.substring(1)
         buttonEl.id = button.toLowerCase()
         buttonEl.classList.add("button-storting")
 

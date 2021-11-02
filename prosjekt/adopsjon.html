@@ -7,11 +7,12 @@
     <style>
         #front-page {
             width: 100%; 
-            max-height: 20em; 
+            height: 100%;
             
             /** Needs modern browser to work correctly, not IE */
             object-fit: cover; 
             object-position: left 30%;
+            position: relative;
         }
 
         /** Styling specific to this page only */
@@ -33,9 +34,10 @@
             font-weight: normal;
         }
 
-        button {
+        #buttons > a {
             border: none !important;
             outline: none !important;
+            text-decoration: none !important;
 
             background-color: var(--button-background-color);
             color: var(--button-color);
@@ -49,7 +51,7 @@
             transition: opacity 200ms ease;
         }
 
-        button:hover {
+        #buttons > a:hover {
             opacity: .8;
         }
     </style>
@@ -65,7 +67,7 @@
     </nav>
     <main id="content-body">
         <header>
-            <img id="front-page" src="img/hunder/3-3.jpg" alt="Bilde av en hund"></img>
+            <img id="front-page" src="img/adopsjon.png" alt="Bilde av en hund"></img>
             <h1>Om adopsjon</h1>
         </header>
         <article>
@@ -106,12 +108,12 @@
                 adopsjon og veien videre med oppfølging.
             </p>
             <div id="buttons">
-                <button>Katt</button>
-                <button>Hund</button>
+                <a href="om_katt.html">Katt</a>
+                <a href="om_hund.html">Hund</a>
             </div>
         </article>
     </main>
     <footer id="footer"></footer>
     <script type="text/javascript" src="js/footer.js"></script>
-    <script src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
 </body>

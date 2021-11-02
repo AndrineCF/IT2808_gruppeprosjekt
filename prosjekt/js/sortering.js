@@ -23,7 +23,7 @@ var kidFriendlyButtonEl = document.getElementById("barnevennlig")
 
 // FUNCTIONS
 
-function createDisplay(img, name, age, rase, others){
+function createDisplay(img, name, age, rase, others, link){
 
     // Creating the div for hold all elements for anima display box
     var animalDisplayaEl = document.createElement("div")
@@ -33,6 +33,11 @@ function createDisplay(img, name, age, rase, others){
     var imgAnimalEL = document.createElement("img")
     imgAnimalEL.setAttribute("src", img)
     imgAnimalEL.setAttribute("alt", "bilde av " + name)
+    
+    imgAnimalEL.style.cursor = 'pointer'
+    imgAnimalEL.onclick = function() {
+        window.location.replace(link)
+    }
     imgAnimalEL.classList.add("animal-img")
     animalDisplayaEl.append(imgAnimalEL)
 
@@ -85,19 +90,22 @@ function stortingGender(){
                 jsonDyr[titleAnimal][i]["navn"],
                 jsonDyr[titleAnimal][i]["alder"],
                 jsonDyr[titleAnimal][i]["rase"],
-                jsonDyr[titleAnimal][i]["annet"])
+                jsonDyr[titleAnimal][i]["annet"],
+                jsonDyr[titleAnimal][i]["link"])
         } else if (gender == "han" && jsonDyr[titleAnimal][i]["kjonn"] == "han") {
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         } else if(gender == "begge"){
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         }
     }
 
@@ -124,13 +132,15 @@ function stortingAllergyFriendly(){
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         } else if (allergyFriendly == "nei" && jsonDyr[titleAnimal][i]["allergivennlig"] == "nei"){
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         }
 
 
@@ -164,13 +174,15 @@ function stortingKidFriendly(){
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         } else if (kidFriendly == "nei" && jsonDyr[titleAnimal][i]["barnevennlig"] == "nei"){
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         }
 
 
@@ -186,7 +198,7 @@ function stortingKidFriendly(){
     contentBodyEl.append(sectionEl)
 }
 
-function stortingAge(){
+function stortingAge(e){
     // remove all the element in section
     while(sectionEl.firstChild){
         sectionEl.removeChild(sectionEl.firstChild)
@@ -194,6 +206,18 @@ function stortingAge(){
 
     // goes thourgh every element in josnDyr
     for(i in jsonDyr[titleAnimal]) {
+        if (e.target.value === 'alle') {
+            const animal = jsonDyr[titleAnimal][i]
+            createDisplay(
+                animal["img"],
+                animal["navn"],
+                animal["alder"],
+                animal["rase"],
+                animal["annet"],
+                animal["link"]
+            )
+            continue
+        }
 
         // get choosen value
         var ageString = ageOptionEl.value
@@ -205,28 +229,32 @@ function stortingAge(){
                 jsonDyr[titleAnimal][i]["navn"],
                 jsonDyr[titleAnimal][i]["alder"],
                 jsonDyr[titleAnimal][i]["rase"],
-                jsonDyr[titleAnimal][i]["annet"])
+                jsonDyr[titleAnimal][i]["annet"],
+                jsonDyr[titleAnimal][i]["link"])
         } else if((6 <= parseInt(age[0]) && parseInt(age[1]) <= 10) &&
         (6 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 10)){
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         } else if((11 <= parseInt(age[0]) && parseInt(age[1]) <= 15) &&
         (11 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 15)){
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         } else if((16 <= parseInt(age[0]) && parseInt(age[1]) <= 20) &&
         (16 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 20)){
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"])
+            jsonDyr[titleAnimal][i]["annet"],
+            jsonDyr[titleAnimal][i]["link"])
         }
 
     }
@@ -243,7 +271,8 @@ for(i in jsonDyr[titleAnimal]) {
                 jsonDyr[titleAnimal][i]["navn"],
                 jsonDyr[titleAnimal][i]["alder"],
                 jsonDyr[titleAnimal][i]["rase"],
-                jsonDyr[titleAnimal][i]["annet"])
+                jsonDyr[titleAnimal][i]["annet"],
+                jsonDyr[titleAnimal][i]["link"])
 }
 
 // add the new section to content body 

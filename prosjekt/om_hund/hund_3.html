@@ -3,9 +3,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hund - Fallback title</title>
-    <link rel="stylesheet" type="text/css" href="../css/hund.css"></link>
-    <script type="application/javascript" src="../js/create_dog_page.js"></script>
-    <script type="application/javascript" src="../js/image_slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/animal.css"></link>
+    <link rel="stylesheet" type="text/css" href="../css/styling.css"></link>
+    <script type="text/javascript" src="../js/create_dog_page.js"></script>
+    <script type="text/javascript" src="../js/image_slider.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +15,13 @@
 </head>
 <body>
     <noscript>This page requires Javascript activated in your browser</noscript>
-    <main id="hund" class="gallery"></main>
+    <nav>
+        <div class="navbar"></div>
+    </nav>
+    <main id="animal" class="gallery"></main>
+    <footer id="footer"></footer>
     <script type="text/javascript">
-        createDog({
+        createAnimal({
             title: 'Bamse',
             text: `Basse (3 år) er en glatt håret labrador. Bamse trenger å komme til ett hjem med lidenskap for hund, uten barn, 
 hvor han får brukt både hodet og kropp masse. Basse har noen utfordringer, og vil kreve en innsats 
@@ -44,4 +49,6 @@ vil vi gjerne høre fra deg da dette er en hund som krever litt ekstra.
             ]
         })
     </script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
 </body>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head lang="nb-no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katt - Fallback title</title>
+    <link rel="stylesheet" type="text/css" href="../css/animal.css"></link>
+    <link rel="stylesheet" type="text/css" href="../css/styling.css"></link>
+    <script type="text/javascript" src="../js/create_dog_page.js"></script>
+    <script type="text/javascript" src="../js/image_slider.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <noscript>This page requires Javascript activated in your browser</noscript>
+    <nav>
+        <div class="navbar"></div>
+    </nav>
+    <main id="animal" class="gallery"></main>
+    <footer id="footer"></footer>
+    <script type="text/javascript">
+        createAnimal({
+            title: 'Henry',
+            text: `Dette er Henry, en 3 år gammel norsk skogkatt. Henry liker lek og moro, i tillegg til å være glad i de fleste typer mennesker.
+            Han har tidligere bodd hos en familie bestående av mennesker i alle aldre, og har da visst seg i å være sikker på hver og én.
+
+            Dette er derfor en katt som har evne til miljø-tilpasning. De tidligere eierne måtte levere fra seg Henry grunnet utvikling av allergi i løpet av de tre årene han har bodd med dem.
+            Her har han hatt mennesker rundt seg hele tiden, og har derfor kun vært noen timer alene i løpet av en dag. Han trives også veldig godt ute, der han kan være ute tilsvarende en arbeidsdag.
+            Henry er en veldig snill og omsorgsfull katt, som gjerne tar hopper opp på fanget til både kjente og fremmede for å få kos.
+
+            Han er veldig reinslig, og har tilvendt seg å få bruke katte-do når han er inne, men går også på do inne. Han føler seg like trygg på godt voksne mennesker, så vel som barn.`
+        })
+
+        ImageSlider({
+            folder: 'katter',
+            pathPrefix: '..',
+            images: [
+                'katt_1.1.jpg',
+                'katt_1.2.jpg'
+            ]
+        })
+    </script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
+</body>

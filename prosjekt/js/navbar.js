@@ -8,14 +8,16 @@ var a = document.createElement("a");
 // create img element
 var img = document.createElement("img");
 
+const locationIsSubPath = /om_(hund|katt)\//gmi.test(window.location.href)
+
 // link img to headerLogo
-img.src = "img/headerLogo.png";
+img.src = locationIsSubPath ? "../img/headerLogo.png" : "img/headerLogo.png";
 
 // adds the img to the a
 a.appendChild(img);
 
 // adds the hyperlink to a
-a.href = "forside.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}forside.html` : "/forside.html"
 
 // adds a to the navbar
 navHeader.appendChild(a);
@@ -25,7 +27,7 @@ a = document.createElement("a");
 
 a.innerHTML = "Om oss";
 // adds the hyperlink to a
-a.href = "om_oss.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}om_oss.html` :"om_oss.html"
 
 // adds a to the navbar
 navHeader.appendChild(a);
@@ -43,9 +45,9 @@ navHeader.appendChild(a);
 // reset var a 
 a = document.createElement("a");
 
-a.innerHTML = "Fostering";
+a.innerText = "Fostering";
 // adds the hyperlink to a
-a.href = "fosterhjem.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}fosterhjem.html` : "fosterhjem.html"
 
 // adds a to the navbar
 navHeader.appendChild(a);
@@ -62,7 +64,7 @@ var dropdownBtn = document.createElement("button");
 // gives the dropdown the class dropdown2
 dropdownBtn.classList = "dropbtn2";
 
-dropdownBtn.innerHTML = "Adopsjon <img src='img/down_arrow.png' alt='V'>";
+dropdownBtn.innerHTML = `Adopsjon <img src='${locationIsSubPath ? '../img/down_arrow.png' : 'img/down_arrow.png'}' alt='V'>`;
 
 // adds dropdownBtn to dropdownDiv
 dropdownDiv.appendChild(dropdownBtn);
@@ -78,36 +80,36 @@ dropdownContent.classList = "dropdown2-content";
 // reset var a 
 a = document.createElement("a");
 
-a.innerHTML = "om adopsjon";
+a.innerHTML = "Om adopsjon";
 // adds the hyperlink to a
-a.href = "adopsjon.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}adopsjon.html` : "adopsjon.html"
 
 dropdownContent.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
 
-a.innerHTML = "katt";
+a.innerText = "Katt";
 // adds the hyperlink to a
-a.href = "om_katt.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}om_katt.html` : "om_katt.html"
 
 dropdownContent.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
 
-a.innerHTML = "hund";
+a.innerText = "Hund";
 // adds the hyperlink to a
-a.href = "om_hund.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}om_hund.html` : "om_hund.html"
 
 dropdownContent.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
 
-a.innerHTML = "skjema";
+a.innerText = "Skjema";
 // adds the hyperlink to a
-a.href = "kontakt_skjema.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}kontakt_skjema.html` : "kontakt_skjema.html"
 
 dropdownContent.appendChild(a);
 
@@ -130,13 +132,18 @@ dropdownDiv.onmouseleave = function(){
 
 /* function that uses the id inserted so that the button can display th dropdowncontent associated with it */
 function overNavbar(id) {
-        document.getElementById(id).classList.add("show");
-        console.log("over")
+        const node = document.getElementById(id)
+        if (node) {
+                node.classList.add("show");
+        }
 }
 
 function leaveNavbar(id) {
-        document.getElementById(id).classList.remove("show");
-        console.log("leave")
+        const node = document.getElementById(id)
+        
+        if (node) {
+                node.classList.remove("show");
+        }
 }
 
 /* how to program multiple dropdowns in a navbar was gotten from this website: https://stackoverflow.com/questions/41880822/have-multiple-click-to-open-dropdown-menus-only-want-one-open-at-a-time

@@ -19,10 +19,16 @@ html, body, main {
     flex-direction: column;
     margin: auto;
     max-width: var(--page-width, 50ch);
+
+    padding-bottom: 1em;
 }
 
 .gallery-header > h1 {
     margin-top: 3rem;    
+}
+
+.gallery p {
+    font-weight: normal !important;
 }
 
 .gallery-images {

@@ -7,12 +7,13 @@
     /**
      * Global metode på vinduet for å lage hunder
      */
-    window.createDog = function({
+    window.createAnimal = function({
         title = '',
-        text = ''
+        text = '',
+        selector = '#animal'
     } = {}) { // default argumenter og destrukturering
         // finn en forventet id på siden
-        const dogPage = document.querySelector('#hund')
+        const dogPage = document.querySelector(selector)
 
         // Oppdater tittel på siden til å gjenspeile tittelen som sendes inn i funksjonen
         document.title = title
