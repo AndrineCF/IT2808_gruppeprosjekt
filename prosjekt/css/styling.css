@@ -127,6 +127,7 @@ p, ul, .button-storting, #kjonn, #alder{
     text-decoration: none;
     font-size: large;
     padding: 1em;
+    font-family: 'Inter', sans-serif;
   }
   
   /* can't use class to change logo to right because it has lower priority */
@@ -198,8 +199,7 @@ footer {
 }
 
 footer div {
-    /* display: flex;
-    align-items: center; Maybe this? */
+    font-family: 'Inter', sans-serif;
     width: 30em;
     text-align: center;
     margin: auto;
@@ -216,7 +216,7 @@ footer div :nth-child(1) {
 footer div :nth-child(2) {
     width: 15em;
     float: right;
-    margin: auto;
+    height: auto;
 }
 
 /* om oss styling */
