@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head lang="nb-no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katt - Fallback title</title>
+    <link rel="stylesheet" type="text/css" href="../css/hund.css"></link>
+    <script type="application/javascript" src="../js/create_dog_page.js"></script>
+    <script type="application/javascript" src="../js/image_slider.js"></script>
+</head>
+<body>
+    <noscript>This page requires Javascript activated in your browser</noscript>
+    <main id="katt" class="gallery"></main>
+    <script type="text/javascript">
+        createDog({
+            title: 'Henry',
+            text: `Dette er Henry, en 3 år gammel norsk skogkatt. Henry liker lek og moro, i tillegg til å være glad i de fleste typer mennesker. 
+            Han har tidligere bodd hos en familie bestående av mennesker i alle aldre, og har da visst seg i å være sikker på hver og én. 
+            Dette er derfor en katt som har evne til miljø-tilpasning. De tidligere eierne måtte levere fra seg Henry grunnet utvikling av allergi i løpet av de tre årene han har bodd med dem. 
+            Her har han hatt mennesker rundt seg hele tiden, og har derfor kun vært noen timer alene i løpet av en dag. Han trives også veldig godt ute, der han kan være ute tilsvarende en arbeidsdag. 
+            
+            Henry er en veldig snill og omsorgsfull katt, som gjerne tar hopper opp på fanget til både kjente og fremmede for å få kos. 
+            Han er veldig reinslig, og har tilvendt seg å få bruke katte-do når han er inne, men går også på do inne. Han føler seg like trygg på godt voksne mennesker, så vel som barn. `
+        })
+
+        ImageSlider({
+            folder: 'katter',
+            pathPrefix: '..',
+            images: [
+                'katt_1.1.jpg',
+                'katt_1.2.jpg',
+            ]
+        })
+    </script>
+</body>
