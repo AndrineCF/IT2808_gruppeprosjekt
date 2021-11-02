@@ -138,3 +138,6 @@ function leaveNavbar(id) {
         document.getElementById(id).classList.remove("show");
         console.log("leave")
 }
+
+/* how to program multiple dropdowns in a navbar was gotten from this website: https://stackoverflow.com/questions/41880822/have-multiple-click-to-open-dropdown-menus-only-want-one-open-at-a-time
+   While we did end up only using one dropdown, it is now easier to add more in the future */
