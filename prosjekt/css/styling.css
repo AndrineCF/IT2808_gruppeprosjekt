@@ -194,7 +194,7 @@ p, ul, .button-storting, #kjonn, #alder{
   }
 
   /* footer styling */
-
+/* how to style the footer so that it is always as the bottom was inspired by this website: https://css-tricks.com/couple-takes-sticky-footer/ */
 footer {
     width: 100%;
     height: 5em;
