@@ -37,7 +37,7 @@ a = document.createElement("a");
 
 a.innerHTML = "Bidra";
 // adds the hyperlink to a
-a.href = "bidra.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}bidra.html` :"bidra.html"
 
 // adds a to the navbar
 navHeader.appendChild(a);
