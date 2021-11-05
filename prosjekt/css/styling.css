@@ -130,6 +130,10 @@ p, ul, .button-storting, #kjonn, #alder{
     font-family: 'Inter', sans-serif;
   }
   
+  .navbar  a:hover {
+    background: #808080;
+  }
+
   /* can't use class to change logo to right because it has lower priority */
   .navbar a:first-child {
     float: left;
@@ -150,6 +154,12 @@ p, ul, .button-storting, #kjonn, #alder{
   }
   
 
+  /* the styling on dropdown part was created for the website, but inspiration was taken form these sites: 
+      https://stackoverflow.com/questions/41880822/have-multiple-click-to-open-dropdown-menus-only-want-one-open-at-a-time
+      https://www.w3schools.com/howto/howto_js_dropdown.asp
+      https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+      */
+
   .dropbtn2 {
     background-color: #fff;
     white-space: nowrap;
@@ -157,7 +167,7 @@ p, ul, .button-storting, #kjonn, #alder{
   }
 
   .dropbtn2:hover, .dropbtn2:focus {
-    background-color: grey;
+    background-color: #808080;
     border: none;
   }
   .dropdown2 {
@@ -178,9 +188,7 @@ p, ul, .button-storting, #kjonn, #alder{
     display: block;
     height: auto;
   }
-  .dropdown2 a:hover {
-    background: grey;
-  }
+  
   .show {
     display:block;
   }
