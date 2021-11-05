@@ -11,7 +11,9 @@
         const image = document.querySelector('.gallery-images > img') // finn bildet
         const [previous, next] = Array.from(document.querySelectorAll('.gallery-toggles > button')) // finn toggles
     
-        
+        // temporary code
+        console.log(image);
+
         let currentImageIndex = 0 // hvilket bilde er vi på av variablen bilder
         let imageRef = null // referanse til bildet når modal er aktivert
         let buttonRef = null // referanse til button når modal er aktivert

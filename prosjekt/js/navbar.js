@@ -8,7 +8,7 @@ var a = document.createElement("a");
 // create img element
 var img = document.createElement("img");
 
-const locationIsSubPath = /om_(hund|katt)\//gmi.test(window.location.href)
+const locationIsSubPath = /om_(hund|katt|forside)\//gmi.test(window.location.href)
 
 // link img to headerLogo
 img.src = locationIsSubPath ? "../img/headerLogo.png" : "img/headerLogo.png";
@@ -17,7 +17,7 @@ img.src = locationIsSubPath ? "../img/headerLogo.png" : "img/headerLogo.png";
 a.appendChild(img);
 
 // adds the hyperlink to a
-a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}forside.html` : "forside.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}om_forside/forside.html` : "om_forside/forside.html"
 
 // adds a to the navbar
 navHeader.appendChild(a);
