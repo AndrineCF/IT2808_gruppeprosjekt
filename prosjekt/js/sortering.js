@@ -15,11 +15,14 @@ var genderOptionEl = document.getElementById("kjonn")
 // get the option element for age
 var ageOptionEl = document.getElementById("alder")
 
-// get the button value for allergy friendly
+// get the button element for allergy friendly
 var allergyFriendlyButtonEl = document.getElementById("allergivennlig")
 
-// get the button value for kid friendly
+// get the button element for kid friendly
 var kidFriendlyButtonEl = document.getElementById("barnevennlig")
+
+// get button element for deafult
+var defaultButtonEl = document.getElementById("default")
 
 // FUNCTIONS
 
@@ -263,6 +266,31 @@ function stortingAge(e){
     contentBodyEl.append(sectionEl)
 }
 
+function defaultDisplay() {
+    // remove all the element in section
+    while(sectionEl.firstChild){
+        sectionEl.removeChild(sectionEl.firstChild)
+    }
+        
+    for(i in jsonDyr[titleAnimal]) {
+
+        createDisplay(jsonDyr[titleAnimal][i]["img"],
+                    jsonDyr[titleAnimal][i]["navn"],
+                    jsonDyr[titleAnimal][i]["alder"],
+                    jsonDyr[titleAnimal][i]["rase"],
+                    jsonDyr[titleAnimal][i]["annet"],
+                    jsonDyr[titleAnimal][i]["link"])
+    }
+
+    // Set option default values when rest display
+    genderOptionEl.selectedIndex = 0
+    ageOptionEl.selectedIndex = 0
+
+    // add the update section to content body 
+    contentBodyEl.append(sectionEl)
+    
+}
+
  // MAIN
 
 for(i in jsonDyr[titleAnimal]) {
@@ -283,3 +311,4 @@ genderOptionEl.addEventListener("change", stortingGender)
 allergyFriendlyButtonEl.addEventListener("click", stortingAllergyFriendly)
 kidFriendlyButtonEl.addEventListener("click", stortingKidFriendly)
 ageOptionEl.addEventListener("change", stortingAge)
+defaultButtonEl.addEventListener("click", defaultDisplay)

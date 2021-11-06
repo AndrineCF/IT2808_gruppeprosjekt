@@ -14,20 +14,21 @@ navbarEl.id = "navbar-storting"
 // Crating json data for katt and dog in select meny
 var jsonData = {
     "selectMeny": {
-        "hund": {
-            "kjonn" : ["Hun", "Han", "begge"],
-            "alder" : ["1-5","6-10","11-13", "alle"]
+        "hunder": {
+            "kjonn" : ["Hun", "Han"],
+            "alder" : ["1-5","6-10","11-13"]
         },
 
-        "katt": {
-            "kjonn" : ["Hun", "Han", "begge"],
-            "alder" : ["1-5","6-10","11-15","16-20", "alle"]
+        "katter": {
+            "kjonn" : ["Hun", "Han"],
+            "alder" : ["1-5","6-10","11-15","16-20"]
         }
     },
 
     "button": {
         "allergivennlig": "Allergivennlig",
-        "barnevennlig": "Barnevennlig"
+        "barnevennlig": "Barnevennlig",
+        "default": "Default"
     }
 }
 
@@ -53,11 +54,10 @@ function createSelectMeny(navbar, animal){
         let optionEl = document.createElement("option")
 
         // setting as kjonn or alder show first
-        optionEl.disabled = true
         optionEl.selected = true
         optionEl.hidden = true
         optionEl.value = ""
-        optionEl.innerText = meny
+        optionEl.innerText = meny.charAt(0).toUpperCase() + meny.substring(1)
 
         // add element to label and select element
         labelEl.appendChild(selectEl)
@@ -65,7 +65,6 @@ function createSelectMeny(navbar, animal){
 
         // add elemetens in the select meny
         for(i in animal[meny]) {
-            console.log(i)
             let optionEl = document.createElement("option")
             optionEl.value = animal[meny][i].toLowerCase()
             optionEl.innerText = animal[meny][i]
@@ -92,7 +91,7 @@ function creatingButtons(navbar, buttons) {
         buttonEl.innerText = button.charAt(0).toUpperCase() + button.substring(1)
         buttonEl.id = button.toLowerCase()
         buttonEl.classList.add("button-storting")
-
+        
         // add it to navbar
         labelEl.appendChild(buttonEl)
         navbar.appendChild(labelEl)

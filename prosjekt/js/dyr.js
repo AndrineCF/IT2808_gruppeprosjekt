@@ -67,7 +67,7 @@ var jsonDyr = {
             "link": "om_katt/katt_6.html"
         },
     ],
-    "hund": [
+    "hunder": [
         {
         "navn": "Milo",
         "img": "./img/hunder/1-1.jpg",
