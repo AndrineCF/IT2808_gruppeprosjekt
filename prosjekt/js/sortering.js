@@ -137,24 +137,9 @@ function stortingAllergyFriendly(){
             jsonDyr[titleAnimal][i]["rase"],
             jsonDyr[titleAnimal][i]["annet"],
             jsonDyr[titleAnimal][i]["link"])
-        } else if (allergyFriendly == "nei" && jsonDyr[titleAnimal][i]["allergivennlig"] == "nei"){
-            createDisplay(jsonDyr[titleAnimal][i]["img"],
-            jsonDyr[titleAnimal][i]["navn"],
-            jsonDyr[titleAnimal][i]["alder"],
-            jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"],
-            jsonDyr[titleAnimal][i]["link"])
-        }
-
-
+        } 
     }
-
-    // switch value of button
-    if(allergyFriendly == "ja") {
-        allergyFriendlyButtonEl.value = "nei"
-    } else if(allergyFriendly == "nei") {
-        allergyFriendlyButtonEl.value = "ja"
-    }
+    
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
 }
@@ -179,24 +164,9 @@ function stortingKidFriendly(){
             jsonDyr[titleAnimal][i]["rase"],
             jsonDyr[titleAnimal][i]["annet"],
             jsonDyr[titleAnimal][i]["link"])
-        } else if (kidFriendly == "nei" && jsonDyr[titleAnimal][i]["barnevennlig"] == "nei"){
-            createDisplay(jsonDyr[titleAnimal][i]["img"],
-            jsonDyr[titleAnimal][i]["navn"],
-            jsonDyr[titleAnimal][i]["alder"],
-            jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"],
-            jsonDyr[titleAnimal][i]["link"])
-        }
-
-
+        } 
     }
 
-    // switch value of button
-    if(kidFriendly == "ja") {
-        kidFriendlyButtonEl.value = "nei"
-    } else if(kidFriendly == "nei") {
-        kidFriendlyButtonEl.value = "ja"
-    }
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
 }

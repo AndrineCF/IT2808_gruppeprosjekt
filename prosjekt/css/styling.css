@@ -106,6 +106,10 @@ p, ul, .button-storting, #kjonn, #alder{
   height: 40px;
 }
 
+#navbar-storting > label > button:focus {
+  color: #A31000;
+}
+
 .button-storting, #kjonn, #alder{
   display: inline;
   height: 100%;
