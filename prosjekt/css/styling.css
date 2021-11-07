@@ -100,9 +100,9 @@ p, ul, .button-storting, #kjonn, #alder{
 
 
 #img_om_oss {
-  height: 20rem;
+  height: auto;
   width: auto;
-  /*margin-top: 1rem;*/
+  max-height: 40%;
 }
 
 /* styling navbar for storting */
