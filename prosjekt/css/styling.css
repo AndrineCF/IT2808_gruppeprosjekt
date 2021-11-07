@@ -51,6 +51,7 @@ ul {
 
 .animal-display{
   display: inline-block;
+  word-wrap: break-word;
 
   width: 300px;
   height: 600px;
