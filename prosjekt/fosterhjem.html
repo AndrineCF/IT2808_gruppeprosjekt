@@ -6,6 +6,59 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0/">
       <link rel="stylesheet" href="css/styling.css">
 
+      <style>
+        #front-page {
+            width: 100%; 
+            height: 50%;
+            
+            /** Needs modern browser to work correctly, not IE */
+            object-fit: cover; 
+            object-position: left 30%;
+            position: relative;
+        }
+
+        /** Styling specific to this page only */
+        header > h1 {
+            --margin: .5em;
+            margin-top: var(--margin);
+            margin-bottom: var(--margin);
+        }
+
+        article {
+            margin-bottom: 3rem;
+        }
+
+        article > * + * {
+            margin-top: 1em;
+        }
+
+        article > p, article li {
+            font-weight: normal;
+        }
+
+        #buttons > a {
+            border: none !important;
+            outline: none !important;
+            text-decoration: none !important;
+
+            background-color: var(--button-background-color);
+            color: var(--button-color);
+
+            padding: .5em 1em;
+            border-radius: .25em;
+            cursor: pointer;
+
+            opacity: 1;
+
+            transition: opacity 200ms ease;
+        }
+
+        #buttons > a:hover {
+            opacity: .8;
+        }
+
+    </style>
+
       <!-- Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +68,16 @@
     <body>
 
       <!-- Navbar -->
-      <header>
-            <div class="navbar"></div>
-        </header>
+      <nav>
+          <div class="navbar"></div>
+      </nav>
 
-      <div id="content-body">
-        <section id="omfostring">
+      <main id="content-body">
+        <header>
+          <img id="front-page" src="img/fostering.jpg" alt="Bilde av en hund">
           <h1>Om fostring</h1>
-            <br>
+      </header>
+        <article>
           <p>For å kunne hjelpe flest mulig dyr, trenger Nytt hjem for dyr hjelp av deg som ønsker å fungere som fosterhjem for dyr. På grunn av stor pågang og et begrenset antall plasser hos oss, har vi hele tiden behov for fosterhjem til både katter og hunder. Som fosterhjem for en hund eller katt vil du kunne hjelpe dyr som vi ellers ikke hadde hatt ressurser til å hjelpe. Noen ganger har vi også dyr hos oss som trenger ro eller ekstra tilsyn, og som derfor ikke kan bo sammen med andre dyr hos oss. Sammen kan vi hjelpe dyrene slik at de til slutt ender i et trygt og godt hjem.</p>
             <br>
           <p>Dersom du tenker at dette høres interessant ut, kan du benytte vårt kontaktskjema nedenfor. Nytt hjem for dyr stiller med alt dyret behøver av utstyr, fôr og medisiner, og ekstra utgifter knyttet til dyret dekkes av oss. Før du bestemmer deg for å være fosterhjem, er det likevel noen ting du bør tenke over:</p>
@@ -33,9 +88,11 @@
             <li>Du må være villig til å få besøk både av oss i Nytt hjem for dyr og fra personer som vi har godkjent og som ønsker å adoptere dyret.</li>
           </ul>
             <br>
-          <button class="button1" onclick="document.location='kontakt_skjema.html'">Kontaktskjema ></button>
-        </section>
-      </div>
+            <div id="buttons">
+              <a href="kontakt_skjema.html">Kontaktskjema ></a>
+            </div>
+        </article>
+      </main>
 
       <!-- Footer -->
       <footer id="footer"></footer>
