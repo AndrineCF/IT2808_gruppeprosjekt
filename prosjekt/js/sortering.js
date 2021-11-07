@@ -30,7 +30,6 @@ function createDisplay(img, name, age, rase, others, link){
 
     var linkEl = document.createElement("a")
     linkEl.setAttribute("href", link)
-    linkEl.setAttribute("target", "_blank")
     linkEl.setAttribute("cursor", "pointer")
     linkEl.style.color = "black"
 
