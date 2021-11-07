@@ -24,9 +24,14 @@
         <div id ="front-page-content-body"> 
             <div class="gallery-images">
                 <style>
+                    .gallery-images {
+                        flex: .7;
+                        max-height: 60vh;
+                    }
+
                     .gallery-images > img {
-                        height: 500px !important;
-                        object-fit: contain;
+                        height: auto;
+                        object-fit: cover;
                         object-position: center center;
                     }
                 </style>
