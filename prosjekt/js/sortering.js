@@ -46,7 +46,7 @@ function createDisplay(img, name, age, rase, others, link){
 
     // creating a info box for the info
     var animalInfoEl = document.createElement("div")
-    animalInfoEl.classList.add("animal-<info")
+    animalInfoEl.classList.add("animal-info")
 
     // add the name to info box
     var infoTextEl = document.createElement("p")
