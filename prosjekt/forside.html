@@ -13,6 +13,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <style>
+            .gallery-images {
+                flex: .7;
+                max-height: 60vh;
+            }
+
+            .gallery-images > img {
+                height: auto;
+                object-fit: cover;
+                object-position: center center;
+            }
+        </style>
     </head>
     <body>
         <!-- Navbar -->
@@ -23,18 +36,7 @@
         <!-- content. unique content set-up for the first page -->
         <div id ="front-page-content-body"> 
             <div class="gallery-images">
-                <style>
-                    .gallery-images {
-                        flex: .7;
-                        max-height: 60vh;
-                    }
-
-                    .gallery-images > img {
-                        height: auto;
-                        object-fit: cover;
-                        object-position: center center;
-                    }
-                </style>
+                
                 <img class="ignore-zoom" src="img/forside/forside_hund.jpg" alt="Forside bilde av et dyr">
             </div>
             <h1>Nytt hjem for dyr</h1>
