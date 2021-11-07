@@ -8,7 +8,7 @@ var jsonDyr = {
             "rase": "Norsk skogkatt",
             "allergivennlig": "nei",
             "barnevennlig": "ja",
-            "annet": "",
+            "annet": "Henry liker lek og moro, i tillegg til å være glad i de fleste typer mennesker.",
             "link": "om_katt/katt_1.html"
         },
         {
@@ -19,7 +19,7 @@ var jsonDyr = {
             "rase": "Norsk skogkatt",
             "allergivennlig": "nei",
             "barnevennlig": "nei",
-            "annet": "",
+            "annet": "Pirlo er en gammel katt som liker rolige omgivelser og beherskede mennesker",
             "link": "om_katt/katt_2.html"
         },
         {
@@ -30,7 +30,7 @@ var jsonDyr = {
             "rase": "Norsk skogkatt",
             "allergivennlig": "nei",
             "barnevennlig": "ja",
-            "annet": "",
+            "annet": "Hermine er en renslig og kosete katt som likker ligge i fanget til folk hun stoler på.",
             "link": "om_katt/katt_3.html"
         },
         {
@@ -41,7 +41,7 @@ var jsonDyr = {
             "rase": "Norsk skogkatt",
             "allergivennlig": "nei",
             "barnevennlig": "nei",
-            "annet": "",
+            "annet": "Ramus er en veldig spesiell katt, som også er utrolig glad i mennesker.",
             "link": "om_katt/katt_4.html"
         },
         {
@@ -52,7 +52,7 @@ var jsonDyr = {
             "rase": "Norsk skogkatt",
             "allergivennlig": "nei",
             "barnevennlig": "ja",
-            "annet": "",
+            "annet": "Pusur en snill og omtenksom katt, som gjerne hopper opp i fanget til folk.",
             "link": "om_katt/katt_5.html"
         },
         {
@@ -63,7 +63,7 @@ var jsonDyr = {
             "rase": "Norsk skogkatt",
             "allergivennlig": "nei",
             "barnevennlig": "ja",
-            "annet": "",
+            "annet": "En katt som på mange måter har egenskaper som en hund.",
             "link": "om_katt/katt_6.html"
         },
     ],
@@ -76,8 +76,7 @@ var jsonDyr = {
         "rase": "???",
         "allergivennlig": "nei",
         "barnevennlig": "nei",
-        "annet": "Milo er veldig leken, energisk, lærevillig og turglad og " +
-        "tar fort til seg nye triks ved bruk at positiv forsterkning som en godbit eller leke.",
+        "annet": "Milo er veldig leken, energisk, lærevillig og turglad.",
         "link": "om_hund/hund_1.html"
         },
         {
@@ -88,7 +87,7 @@ var jsonDyr = {
         "rase": "???",
         "allergivennlig": "nei",
         "barnevennlig": "nei",
-        "annet": "Sniff har tidligere bodd med små barn noe han er ikke spesielt glad i da han virker usikker på dem og ikke helt "+ 
+        "annet": "Sniff varsler på lyder han hører utenfor og hvis det kommer folk."+ 
         "finner sin plass.",
         "link": "om_hund/hund_2.html"
         },
@@ -100,8 +99,7 @@ var jsonDyr = {
         "rase": "labrador",
         "allergivennlig": "nei",
         "barnevennlig": "nei",
-        "annet": "Basse er en energisk og oppmerksom hund som lærer fort. Han elsker å trene, "+
-        "og blir lett motivert av godbiter og entusiasme.",
+        "annet": "Basse er en energisk og oppmerksom hund som lærer fort.",
         "link": "om_hund/hund_3.html"
         },
         {
@@ -112,8 +110,7 @@ var jsonDyr = {
         "rase": "???",
         "allergivennlig": "nei",
         "barnevennlig": "ja",
-        "annet": "Han er en aktiv hund som er den perfekte turkompis og lekekamerat. "+
-        "Elsker tur, både med sykkel, på ski eller bare gå.",
+        "annet": "Han er en aktiv hund som er den perfekte turkompis og lekekamerat.",
         "link": "om_hund/hund_4.html"
         },
         {
@@ -124,8 +121,7 @@ var jsonDyr = {
         "rase": "???",
         "allergivennlig": "ja",
         "barnevennlig": "ja",
-        "annet": "Maja er ellers rolig og bjeffer nesten aldri. Hun elsker turer, "+
-        "og sier ikke nei til lange turer og fjellturer.",
+        "annet": "Maja er ellers rolig og bjeffer nesten aldri.",
         "link": "om_hund/hund_5.html"
         }
 

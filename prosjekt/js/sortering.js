@@ -222,8 +222,8 @@ function stortingAge(e){
         var age = ageString.split("-")
 
         // update the display of the choosen value
-        if((1 <= parseInt(age[0]) && parseInt(age[1]) <= 5) &&
-            (1 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 5)) {
+        if((0 <= parseInt(age[0]) && parseInt(age[1]) <= 5) &&
+            (0 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 5)) {
 
             createDisplay(jsonDyr[titleAnimal][i]["img"],
                 jsonDyr[titleAnimal][i]["navn"],
