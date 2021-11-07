@@ -250,8 +250,8 @@ footer div :nth-child(2) {
   height: auto;
 }
 
-#div_om_oss section :nth-child(n+2){
-  font-weight: normal;
+#div_om_oss section :first-child{
+  font-weight: bold;
 }
 
 /* forside styling */
