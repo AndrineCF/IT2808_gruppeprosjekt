@@ -27,7 +27,8 @@ var jsonData = {
 
     "button": {
         "allergivennlig": "Allergivennlig",
-        "barnevennlig": "Barnevennlig"
+        "barnevennlig": "Barnevennlig",
+        "vis-all": "Vis Alle"
     }
 }
 
@@ -87,7 +88,10 @@ function creatingButtons(navbar, buttons) {
         let buttonEl = document.createElement("button")
         buttonEl.setAttribute("name", button.toLowerCase())
         buttonEl.value = "ja"
-        buttonEl.innerText = button.charAt(0).toUpperCase() + button.substring(1)
+
+        // getting the value from the json
+        buttonEl.innerText = jsonData["button"][button]
+
         buttonEl.id = button.toLowerCase()
         buttonEl.classList.add("button-storting")
         

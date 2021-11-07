@@ -21,6 +21,9 @@ var allergyFriendlyButtonEl = document.getElementById("allergivennlig")
 // get the button element for kid friendly
 var kidFriendlyButtonEl = document.getElementById("barnevennlig")
 
+// get the button element for show all
+var showAllButtonEl = document.getElementById("vis-all")
+
 // FUNCTIONS
 
 function createDisplay(img, name, age, rase, others, link){
@@ -55,10 +58,12 @@ function createDisplay(img, name, age, rase, others, link){
     infoTextEl.innerText = "Alder: " + age
     animalInfoEl.append(infoTextEl)
 
+    // add rase to info box
     var infoTextEl = document.createElement("p")
     infoTextEl.innerText = "Rase: " + rase
     animalInfoEl.append(infoTextEl)
 
+    // add other info to info box
     var infoTextEl = document.createElement("p")
     infoTextEl.innerText = "Annet: " + others
     animalInfoEl.append(infoTextEl)
@@ -73,15 +78,20 @@ function createDisplay(img, name, age, rase, others, link){
 }
 
 function reset() {
+    // the default setting for display and storting navbar
+
+
     // remove all the element in section
     while(sectionEl.firstChild){
         sectionEl.removeChild(sectionEl.firstChild)
     }
 
+    // change the font to black
     genderOptionEl.style.color = "black"
     ageOptionEl.style.color = "black"
     allergyFriendlyButtonEl.style.color = "black"
     kidFriendlyButtonEl.style.color = "black"
+    showAllButtonEl.style.color = "black"
 }
 
 function stortingGender(){
@@ -115,6 +125,7 @@ function stortingGender(){
     contentBodyEl.append(sectionEl)
 
 
+    // Change the color of the to red
     genderOptionEl.style.color = "#A31000"
 
     // Set option default values when rest display
@@ -132,7 +143,8 @@ function stortingAllergyFriendly(){
         var allergyFriendly = allergyFriendlyButtonEl.value
 
         // update the display of the choosen value
-        if(allergyFriendly == "ja" && jsonDyr[titleAnimal][i]["allergivennlig"] == "ja"){
+        if(allergyFriendly == "ja" && jsonDyr[titleAnimal][i]["allergivennlig"] == "ja") {
+
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
@@ -145,6 +157,7 @@ function stortingAllergyFriendly(){
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
 
+    // Change the color of the to red
     allergyFriendlyButtonEl.style.color = "#A31000"
 
     // Set option default values when rest display
@@ -163,7 +176,8 @@ function stortingKidFriendly(){
         var kidFriendly = kidFriendlyButtonEl.value
 
         // update the display of the choosen value
-        if(kidFriendly == "ja" && jsonDyr[titleAnimal][i]["barnevennlig"] == "ja"){
+        if(kidFriendly == "ja" && jsonDyr[titleAnimal][i]["barnevennlig"] == "ja") {
+
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
@@ -176,6 +190,7 @@ function stortingKidFriendly(){
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
 
+    // Change the color of the to red
     kidFriendlyButtonEl.style.color = "#A31000"
 
     // Set option default values when rest display
@@ -204,33 +219,41 @@ function stortingAge(e){
         // get choosen value
         var ageString = ageOptionEl.value
         var age = ageString.split("-")
-        
+
+        // update the display of the choosen value
         if((1 <= parseInt(age[0]) && parseInt(age[1]) <= 5) &&
-            (1 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 5)){
+            (1 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 5)) {
+
             createDisplay(jsonDyr[titleAnimal][i]["img"],
                 jsonDyr[titleAnimal][i]["navn"],
                 jsonDyr[titleAnimal][i]["alder"],
                 jsonDyr[titleAnimal][i]["rase"],
                 jsonDyr[titleAnimal][i]["annet"],
                 jsonDyr[titleAnimal][i]["link"])
+
         } else if((6 <= parseInt(age[0]) && parseInt(age[1]) <= 10) &&
-        (6 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 10)){
+        (6 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 10)) {
+
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
             jsonDyr[titleAnimal][i]["annet"],
             jsonDyr[titleAnimal][i]["link"])
+
         } else if((11 <= parseInt(age[0]) && parseInt(age[1]) <= 15) &&
-        (11 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 15)){
+        (11 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 15)) {
+
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
             jsonDyr[titleAnimal][i]["rase"],
             jsonDyr[titleAnimal][i]["annet"],
             jsonDyr[titleAnimal][i]["link"])
+
         } else if((16 <= parseInt(age[0]) && parseInt(age[1]) <= 20) &&
-        (16 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 20)){
+        (16 <= jsonDyr[titleAnimal][i]["alder"] && jsonDyr[titleAnimal][i]["alder"] <= 20)) {
+
             createDisplay(jsonDyr[titleAnimal][i]["img"],
             jsonDyr[titleAnimal][i]["navn"],
             jsonDyr[titleAnimal][i]["alder"],
@@ -244,9 +267,32 @@ function stortingAge(e){
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
 
+    // Change the color of the to red
     ageOptionEl.style.color = "#A31000"
     // Set option default values when rest display
     genderOptionEl.selectedIndex = 0
+}
+
+function defaultDisplay(){
+    reset()
+
+    for(i in jsonDyr[titleAnimal]) {
+
+        createDisplay(jsonDyr[titleAnimal][i]["img"],
+                    jsonDyr[titleAnimal][i]["navn"],
+                    jsonDyr[titleAnimal][i]["alder"],
+                    jsonDyr[titleAnimal][i]["rase"],
+                    jsonDyr[titleAnimal][i]["annet"],
+                    jsonDyr[titleAnimal][i]["link"])
+    }
+    
+
+    // Change the color of the to red
+    showAllButtonEl.style.color = "#A31000"
+
+    // Set option default values when rest display
+    genderOptionEl.selectedIndex = 0
+    ageOptionEl.selectedIndex = 0
 }
 
  // MAIN
@@ -269,3 +315,4 @@ genderOptionEl.addEventListener("change", stortingGender)
 allergyFriendlyButtonEl.addEventListener("click", stortingAllergyFriendly)
 kidFriendlyButtonEl.addEventListener("click", stortingKidFriendly)
 ageOptionEl.addEventListener("change", stortingAge)
+showAllButtonEl.addEventListener("click", defaultDisplay)
