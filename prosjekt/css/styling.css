@@ -484,3 +484,11 @@ input[type=submit] {
   font-weight: 600;
   font-size: 15px;
 }
+
+
+#cover-image {
+  --height: 500px;
+  height: var(--height);
+  min-height: var(--height);
+  max-height: var(--height);
+}

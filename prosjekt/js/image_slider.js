@@ -7,12 +7,9 @@
      /**
      * Global metode på vinduet for å lage ImageSlider
      */
-    window.ImageSlider = function({ folder = '', images = [], pathPrefix = '' } = {}) {
+    window.ImageSlider = function({ folder = '', images = [], pathPrefix = '', disableGallery = false, autoplay = false, time = 5000 } = {}) {
         const image = document.querySelector('.gallery-images > img') // finn bildet
         const [previous, next] = Array.from(document.querySelectorAll('.gallery-toggles > button')) // finn toggles
-    
-        // temporary code
-        console.log(image);
 
         let currentImageIndex = 0 // hvilket bilde er vi på av variablen bilder
         let imageRef = null // referanse til bildet når modal er aktivert
@@ -25,15 +22,27 @@
             previous.style.visibility = index === 0 ? 'hidden' : '' // css regler for å vise / skjule buttton hvis relevant
             next.style.visibility = index === images.length - 1 ? 'hidden' : '' // css regler for å vise / skjule buttton hvis relevant
 
-            image.setAttribute('src', `${pathPrefix}/img/${folder}/${images[index]}`) // oppdater til rett bilde
+            image.setAttribute('src', `${pathPrefix ? pathPrefix + '/' : ''}img/${folder}/${images[index]}`) // oppdater til rett bilde
             
             if (imageRef) { // Oppdater modal sitt bilde hvis åpen
                 imageRef.setAttribute('src', `${pathPrefix}/img/${folder}/${images[index]}`)
             }
         }
 
+        if (autoplay) {
+            currentImageIndex = currentImageIndex + 1 === images.length ? 0 : currentImageIndex + 1
+            image.setAttribute('src', `${pathPrefix ? pathPrefix + '/' : ''}img/${folder}/${images[currentImageIndex]}`) // oppdater til rett bilde
+
+            setInterval(() => {
+                currentImageIndex = currentImageIndex + 1 === images.length ? 0 : currentImageIndex + 1
+                image.setAttribute('src', `${pathPrefix ? pathPrefix + '/' : ''}img/${folder}/${images[currentImageIndex]}`) // oppdater til rett bilde
+            }, time)
+
+            return
+        }
+
         setSrcOnImage(currentImageIndex) // Initielt kall for å sette bilde
-    
+        
         next.onclick = function(e) {
             e.stopPropagation() // Vi vil ikke at eventet skal boble oppover og påvirke noe annet
             setSrcOnImage(Math.min(images.length - 1, currentImageIndex + 1)) // Bruker matte for å trygge at vi ikke går utenfor antall bilder i lista
@@ -45,6 +54,9 @@
         }
 
         window.addEventListener('keydown', (e) => {
+            if (disableGallery) {
+                return
+            }
             // beskytter for at key er en faktisk string for metodene under
             if (!(typeof e.key === 'string')) {
                 return 
@@ -68,6 +80,9 @@
 
         // Håndter klikk på bildet for å åpne modal
         image.onclick = function() {
+            if (disableGallery) {
+                return
+            }
             // Beskyttelse for å sjekke at faktisk modal finnes
             if (document.querySelector('.gallery-modal')) {
                 return 

@@ -45,6 +45,10 @@ html, body, main {
     cursor: zoom-in;
 }
 
+.gallery-images > img.ignore-zoom {
+    cursor: unset !important;
+}
+
 .gallery-toggles {
     display: flex;
     flex-direction: row;

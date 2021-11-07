@@ -17,7 +17,7 @@ img.src = locationIsSubPath ? "../img/headerLogo.png" : "img/headerLogo.png";
 a.appendChild(img);
 
 // adds the hyperlink to a
-a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}om_forside/forside.html` : "om_forside/forside.html"
+a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}/forside.html` : "forside.html"
 
 // adds a to the navbar
 navHeader.appendChild(a);
