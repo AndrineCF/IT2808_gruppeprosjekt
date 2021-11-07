@@ -28,6 +28,12 @@ var showAllButtonEl = document.getElementById("vis-all")
 
 function createDisplay(img, name, age, rase, others, link){
 
+    var linkEl = document.createElement("a")
+    linkEl.setAttribute("href", link)
+    linkEl.setAttribute("target", "_blank")
+    linkEl.setAttribute("cursor", "pointer")
+    linkEl.style.color = "black"
+
     // Creating the div for hold all elements for anima display box
     var animalDisplayaEl = document.createElement("div")
     animalDisplayaEl.classList.add("animal-display")
@@ -37,10 +43,6 @@ function createDisplay(img, name, age, rase, others, link){
     imgAnimalEL.setAttribute("src", img)
     imgAnimalEL.setAttribute("alt", "bilde av " + name)
     
-    imgAnimalEL.style.cursor = 'pointer'
-    imgAnimalEL.onclick = function() {
-        window.location.replace(link)
-    }
     imgAnimalEL.classList.add("animal-img")
     animalDisplayaEl.append(imgAnimalEL)
 
@@ -72,9 +74,10 @@ function createDisplay(img, name, age, rase, others, link){
     // add the text box to animal display
     animalDisplayaEl.append(animalInfoEl)
 
+    linkEl.append(animalDisplayaEl)
 
     // add animal display to section
-    sectionEl.append(animalDisplayaEl)
+    sectionEl.append(linkEl)
 
 }
 
