@@ -1,7 +1,7 @@
 var jsonDyr = {
     "katter": [
         {
-            "navn": "Hanne",
+            "navn": "Henry",
             "img": "./img/katter/katt_1.1.jpg",
             "alder": 3,
             "kjonn": "hun",
