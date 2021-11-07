@@ -21,9 +21,6 @@ var allergyFriendlyButtonEl = document.getElementById("allergivennlig")
 // get the button element for kid friendly
 var kidFriendlyButtonEl = document.getElementById("barnevennlig")
 
-// get button element for deafult
-var defaultButtonEl = document.getElementById("default")
-
 // FUNCTIONS
 
 function createDisplay(img, name, age, rase, others, link){
@@ -75,11 +72,20 @@ function createDisplay(img, name, age, rase, others, link){
 
 }
 
-function stortingGender(){
+function reset() {
     // remove all the element in section
     while(sectionEl.firstChild){
         sectionEl.removeChild(sectionEl.firstChild)
     }
+
+    genderOptionEl.style.color = "black"
+    ageOptionEl.style.color = "black"
+    allergyFriendlyButtonEl.style.color = "black"
+    kidFriendlyButtonEl.style.color = "black"
+}
+
+function stortingGender(){
+    reset()
 
     // goes thourgh every element in josnDyr
     for(i in jsonDyr[titleAnimal]) {
@@ -102,26 +108,22 @@ function stortingGender(){
             jsonDyr[titleAnimal][i]["rase"],
             jsonDyr[titleAnimal][i]["annet"],
             jsonDyr[titleAnimal][i]["link"])
-        } else if(gender == "begge"){
-            createDisplay(jsonDyr[titleAnimal][i]["img"],
-            jsonDyr[titleAnimal][i]["navn"],
-            jsonDyr[titleAnimal][i]["alder"],
-            jsonDyr[titleAnimal][i]["rase"],
-            jsonDyr[titleAnimal][i]["annet"],
-            jsonDyr[titleAnimal][i]["link"])
         }
     }
 
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
+
+
+    genderOptionEl.style.color = "#A31000"
+
+    // Set option default values when rest display
+    ageOptionEl.selectedIndex = 0
 }
 
 function stortingAllergyFriendly(){
 
-    // remove all the element in section
-    while(sectionEl.firstChild){
-        sectionEl.removeChild(sectionEl.firstChild)
-    }
+    reset()
 
     // goes thourgh every element in josnDyr
     for(i in jsonDyr[titleAnimal]) {
@@ -142,14 +144,18 @@ function stortingAllergyFriendly(){
     
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
+
+    allergyFriendlyButtonEl.style.color = "#A31000"
+
+    // Set option default values when rest display
+    genderOptionEl.selectedIndex = 0
+    ageOptionEl.selectedIndex = 0
 }
 
 function stortingKidFriendly(){
-    // remove all the element in section
-    while(sectionEl.firstChild){
-        sectionEl.removeChild(sectionEl.firstChild)
-    }
+    reset()
 
+    
     // goes thourgh every element in josnDyr
     for(i in jsonDyr[titleAnimal]) {
 
@@ -169,13 +175,16 @@ function stortingKidFriendly(){
 
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
+
+    kidFriendlyButtonEl.style.color = "#A31000"
+
+    // Set option default values when rest display
+    genderOptionEl.selectedIndex = 0
+    ageOptionEl.selectedIndex = 0
 }
 
 function stortingAge(e){
-    // remove all the element in section
-    while(sectionEl.firstChild){
-        sectionEl.removeChild(sectionEl.firstChild)
-    }
+    reset()
 
     // goes thourgh every element in josnDyr
     for(i in jsonDyr[titleAnimal]) {
@@ -234,31 +243,10 @@ function stortingAge(e){
 
     // add the update section to content body 
     contentBodyEl.append(sectionEl)
-}
 
-function defaultDisplay() {
-    // remove all the element in section
-    while(sectionEl.firstChild){
-        sectionEl.removeChild(sectionEl.firstChild)
-    }
-        
-    for(i in jsonDyr[titleAnimal]) {
-
-        createDisplay(jsonDyr[titleAnimal][i]["img"],
-                    jsonDyr[titleAnimal][i]["navn"],
-                    jsonDyr[titleAnimal][i]["alder"],
-                    jsonDyr[titleAnimal][i]["rase"],
-                    jsonDyr[titleAnimal][i]["annet"],
-                    jsonDyr[titleAnimal][i]["link"])
-    }
-
+    ageOptionEl.style.color = "#A31000"
     // Set option default values when rest display
     genderOptionEl.selectedIndex = 0
-    ageOptionEl.selectedIndex = 0
-
-    // add the update section to content body 
-    contentBodyEl.append(sectionEl)
-    
 }
 
  // MAIN
@@ -281,4 +269,3 @@ genderOptionEl.addEventListener("change", stortingGender)
 allergyFriendlyButtonEl.addEventListener("click", stortingAllergyFriendly)
 kidFriendlyButtonEl.addEventListener("click", stortingKidFriendly)
 ageOptionEl.addEventListener("change", stortingAge)
-defaultButtonEl.addEventListener("click", defaultDisplay)

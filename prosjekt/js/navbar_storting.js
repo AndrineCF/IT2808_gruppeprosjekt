@@ -27,8 +27,7 @@ var jsonData = {
 
     "button": {
         "allergivennlig": "Allergivennlig",
-        "barnevennlig": "Barnevennlig",
-        "default": "Default"
+        "barnevennlig": "Barnevennlig"
     }
 }
 
