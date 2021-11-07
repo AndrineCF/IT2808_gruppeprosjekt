@@ -285,6 +285,7 @@ footer div :nth-child(2) {
   margin-left: 25%;
 }
 
+/* Kontaktskjema */
 /* Styler inputfelter */
 input[type=text], textarea{
   width: 100%;
@@ -316,8 +317,6 @@ input[type=email], textarea{
 input[type=radio], textarea{
   width: 100%;
   border: 1px solid black;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
 }
 input[type=textarea], textarea{
   width: 100%;
@@ -390,8 +389,9 @@ input[type=submit] {
   float: left;
   width: 1%;
   margin-top: 22.5px;
-  position: relative;
-  left: 310px;
+  position: absolute;
+  left: 250px;
+  top: -30px;
 }
 
 /* Clear floats etter columns */
@@ -404,13 +404,13 @@ input[type=submit] {
 /* Posisjon radio label */
 .box1 {
   float: left;
-  width: 10%;
+  width: 12.5%;
 }
 
 /* Posisjon radio button */
 .box2 {
   float: left;
-  width: 10%;
+  width: 12.5%;
   position: relative;
   top: 12.5px;
   left: 20px;
@@ -419,7 +419,7 @@ input[type=submit] {
 /* Posisjon radio label */
 .box3 {
   float: left;
-  width: 10%;
+  width: 12.5%;
   position: relative;
   left: 130px;
 }
@@ -427,7 +427,7 @@ input[type=submit] {
 /* Posisjon radio button */
 .box4 {
   float: left;
-  width: 10%;
+  width: 12.5%;
   position: relative;
   top: 12.5px;
   left: 150px;
@@ -439,6 +439,31 @@ input[type=submit] {
   width: 15%;
   position: relative;
   left: 190px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* Gjør kontaktskjema smalere når bredde under 800px: */
+  [class*="containerskjema"] {
+    position: relative;
+    left: 0px;
+    padding: 0px;
+  }
+  [class*="kolonne-venstre"] {
+    width: 100%;
+    margin-top: 0px;
+  }
+  [class*="kolonne-midt"] {
+    width: 50%;
+    margin-top: 0px;
+  }
+  [class*="kolonne-høyre"] {
+    width: 50%;
+    margin-top: 16.5px;
+  }
+  [class*="box5"] {
+    position: relative;
+    left: 0px;
+  }
 }
 
 /* Styler kontaktskjema-knapp */
