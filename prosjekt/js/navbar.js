@@ -45,7 +45,7 @@ navHeader.appendChild(a);
 // reset var a 
 a = document.createElement("a");
 
-a.innerText = "Fostering";
+a.innerText = "Fostring";
 // adds the hyperlink to a
 a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}fosterhjem.html` : "fosterhjem.html"
 
