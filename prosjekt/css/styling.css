@@ -31,9 +31,9 @@ body {
     font-family: 'Inter', sans-serif;
 
     flex: 1 0 auto; /* decides the flex of the #contentbody. 
-    1 is flexgrow and distirbutes the remaining s. 
-    0 is flex-shrink
-    auto i
+    1 is flexgrow and makes the #content-body grow to fill the empty space
+    0 is flex-shrink so that the content in #content-body doesn't lose any size
+    auto is flex-basis, which makes the default size dependant on how much the there is in #content-body
     */
 }
 
@@ -125,7 +125,7 @@ p, ul, .button-storting, #kjonn, #alder{
   }
   
   .navbar a, .dropbtn2 {
-    float: right;
+    float: right; /* elements are set to float right so that the logo can float left without any interference */
     display: block;
     color: #000;
     text-align: center;
@@ -141,7 +141,7 @@ p, ul, .button-storting, #kjonn, #alder{
 
   /* can't use class to change logo to right because it has lower priority */
   .navbar a:first-child {
-    float: left;
+    float: left; /* left so that the logo is at the left side of the navbar */
     padding: 0;
   }
 
@@ -167,10 +167,14 @@ p, ul, .button-storting, #kjonn, #alder{
   }
   
 
-  /* the styling on dropdown part was created for the website, but inspiration was taken form these sites: 
+  /* the styling on dropdown part was created for the website, but inspiration was taken from these sites: 
       https://stackoverflow.com/questions/41880822/have-multiple-click-to-open-dropdown-menus-only-want-one-open-at-a-time
       https://www.w3schools.com/howto/howto_js_dropdown.asp
       https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+
+      How to have the dropdown as a class was taken in particular from the first one, which is why the number 2 is shared. 
+      However since we reduced the dropdown to one button, it is currently uneccesaryu code.
+      Regardless it makes it easier to implement another dropdown in the navbar.
       */
 
   .dropbtn2 {
@@ -185,7 +189,6 @@ p, ul, .button-storting, #kjonn, #alder{
   }
   .dropdown2 {
     z-index: 30;
-    float: right;
     overflow: hidden;
     outline: none;
   }
@@ -207,7 +210,7 @@ p, ul, .button-storting, #kjonn, #alder{
   }
 
   /* footer styling */
-/* the use of flexbox to keep the footer at the bottom was inspired by this website: https://css-tricks.com/couple-takes-sticky-footer/ */
+  /* the use of flexbox to keep the footer at the bottom was inspired by this website: https://css-tricks.com/couple-takes-sticky-footer/ */
 footer {
     width: 100%;
     height: 5em;
@@ -215,28 +218,29 @@ footer {
     background: #F9DCDC;
     border-top: 3px #000000 solid;  
     
-    flex-shrink: 0; /* flex shrinks 0 so that the footer does not become any smaller and keep it intended size */
+    flex-shrink: 0; /* flex shrinks 0 so that the footer does not become any smaller and keeps it intended size */
 }
 
+/* footer div so that we can have two div boxes next to each other */
 footer div {
     font-family: 'Inter', sans-serif;
-    width: 30em;
-    text-align: center;
+    width: 30em; /* the total size of the two boxes */
+    text-align: center; /* center so that the text looks nice */
     margin: auto;
-    padding-top: 0.5em;
+    padding-top: 0.5em; /* adds padding to the top of all three div boxes*/
     font-size: 14px;
 }
 
 footer div :nth-child(1) {
-    width: 15em;
-    float: left;
-    height: auto;
+    width: 15em; /* half of the size of the parent div */
+    float: left; /* floats left to make it go to the middle */
+    height: auto; /* auto so that the size depends on the content */
 }
 
 footer div :nth-child(2) {
-    width: 15em;
-    float: right;
-    height: auto;
+    width: 15em; /* half of the size of the parent div */
+    float: right; /* floats right to make it go to the middle */
+    height: auto; /* auto so that the size depends on the content */
 }
 
 /* om oss styling */
