@@ -110,7 +110,7 @@ dropdownContent.appendChild(a);
 // reset var a 
 a = document.createElement("a");
 
-a.innerText = "Skjema";
+a.innerText = "Kontakskjema";
 // adds the hyperlink to a
 a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}kontakt_skjema.html` : "kontakt_skjema.html"
 
