@@ -163,11 +163,11 @@ html, body, main {
     margin-bottom: 2em;
 }
 
-a {
+article a {
     color: var(--button-color);
     text-decoration: none;
 }
 
-.gallery-link:hover, a:hover {
+.gallery-link:hover, article a:hover {
     opacity: .8;
 }
