@@ -108,11 +108,12 @@ p, ul, .button-storting, #kjonn, #alder{
   height: 40px;
 }
 
-.button-storting, #kjonn, #alder{
+.button-storting, .button-storting:hover, #kjonn, #alder{
   display: inline;
   height: 100%;
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 
 

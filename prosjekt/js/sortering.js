@@ -28,6 +28,7 @@ var showAllButtonEl = document.getElementById("vis-all")
 
 function createDisplay(img, name, age, rase, others, link){
 
+    // create the a element to make the display box clickable
     var linkEl = document.createElement("a")
     linkEl.setAttribute("href", link)
     linkEl.setAttribute("cursor", "pointer")
