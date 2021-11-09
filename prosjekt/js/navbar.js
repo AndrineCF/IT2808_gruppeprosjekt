@@ -13,6 +13,9 @@ const locationIsSubPath = /om_(hund|katt|)\//gmi.test(window.location.href)
 // link img to headerLogo
 img.src = locationIsSubPath ? "../img/headerLogo.png" : "img/headerLogo.png";
 
+// alt til img
+img.alt = "Logo"
+
 // adds the img to the a
 a.appendChild(img);
 
