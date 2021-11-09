@@ -189,6 +189,7 @@ p, ul, .button-storting, #kjonn, #alder{
   }
   .dropdown2 {
     z-index: 30;
+    float: right;
     overflow: hidden;
     outline: none;
   }
