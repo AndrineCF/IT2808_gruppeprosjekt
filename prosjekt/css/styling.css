@@ -179,33 +179,31 @@ p, ul, .button-storting, #kjonn, #alder{
 
   .dropbtn2 {
     background-color: #fff;
-    white-space: nowrap;
-    border: none;
+    border: none; /* removes the border the button normally would have */
   }
 
   .dropbtn2:hover, .dropbtn2:focus {
     background-color: #808080;
-    border: none;
   }
   .dropdown2 {
     z-index: 30;
-    float: right;
+    float: right; /* need this float to keep the content under the button */
     overflow: hidden;
-    outline: none;
   }
   .dropdown2-content {
-    display: none;
+    display: none; /* the content is hidden */
     position: absolute;
     background-color: #f1f1f1;
     overflow: auto;
-    z-index: 1;
-    margin-top: 3rem;
+    z-index: 1; /* makes the content visible eventhough navbar has overflow hidden */
+    margin-top: 3rem; /* avoids the content covering the button */
   }
   .dropdown2-content a {
     display: block;
     height: auto;
   }
   
+  /* this class is added to or removed from dropdown2-content by the code navbar.js */
   .show {
     display:block;
   }
