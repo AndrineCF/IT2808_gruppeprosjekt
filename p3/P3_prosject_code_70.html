@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="author" content="Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran, Kari Stigen">
+    <meta name="description" content="P3: Project, IT2805">
+    <meta name="keyword" content="Project Design">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <!-- Legger til ny font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+
+
+    <title>P3: Projekt kode</title>
+  </head>
+  <body>
+
+
+    <header>
+        <h1>P3: Prosjekt kode</h1>
+        <h2 class ="lighter-font-color">Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran og Kari Stigen</h2>
+        <span class ="lighter-font-color">4. Oktober 2021</span>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dokumentdetaljer</h2>
+            <h3 class="none-weight">P3 Endringer</h3>
+            <h3 class="none-weight">Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran og Kari Stigen</h3>
+            <h3 class="none-weight">11.November 2021</h3>
+        </section>
+
+        <section>
+            <h2>Klient</h2>
+            <p><strong>Klient:</strong> Nytt hjem for dyr</p>
+            <p><strong>kontaktperson:</strong> Einar Lillevik</p>
+            <p><strong>Stilling:</strong> Daglig leder</p>
+            <p><strong>Link til nettsiden:</strong> <a href = "https://folk.ntnu.no/andrinef/IT2808_gruppeprosjekt/prosjekt/forside.html">klikk</a></p>
+        </section>
+
+        <section>
+            <h2>Endringer</h2>
+            <p>Originalt var planlagt med 10 sider av hund og katter. Dette ble minske ned begrunnelse av mengde var for mye å lage, 
+                også følte vi at den mengden vi har nå enda presenterer formålet/konsept til nettsiden. 
+                Under prosessen var tilegg noen endringer i styling. Dette ligger i at noen passet bedre, 
+                eksempel litt mer bilder for å fylle ut sidene mer, eller for å passe at sidene hadde mer en rød tråd mellom designet om seg. 
+                Til slutt ble lagt litt mer funksjonalitet på noen av minstekravene, hovedsakelig sorteringssystem fikk en ekstra knapp som bruker kunne gå til originale visningen.</p>
+
+            <!-- Endring på html -->
+            <h3>Endring til forside.html</h3>
+            <p>Slideshowet ble endret fra å være klikkbart til å gå automatisk og hele bildet blir heller ikke vist lenger. 
+                Årsaken er at brukeren blir mindre overveldet av knapper når de først kommer inn på siden. 
+                Avstanden mellom tittelen og bildet ble også redusert fordi det var unødvendig med så mye hvitt mellomrom.</p>
+
+            <h3>Endring til forsterhjem.html</h3>
+            <p>Det ble lagt til forsidebilde for å fylle siden mer. Dette ble gjort både for å gjøre siden mer interessant og for å gjøre siden mer lik siden “om adopsjon”, 
+                siden disse to sidene ligner i innhold. I tillegg ble tittelen på siden endret til “om fosterhjem”, siden “fosterhjem” kanskje er et bedre ord enn “fostring”.</p>
+            
+            <h3>Endringer til bidra.html</h3>
+            <p>Eneste endring som ble gjort forbindelse med siden “Bidra” er at ble lagt til et bilde. 
+                Dette er for å gjøre siden mer spennende for bruker å se igjennom, spesielt med tanke at det er hovedsakelig bare tekst der. Dermed så ble avgjørelse å legg inn et bilde.</p>
+
+            <h3>Endring til om_oss.html</h3>
+            <p>De første linjene under kontaktinformasjon brukes som overskrifter og er derfor h4, selv om andre paragrafer er vanlig tekst. 
+                Dette er fordi det er tydeligere at overskriftene er annen informasjon enn innholdet. 
+                I tillegg er det ikke lenger noe mellomrom mellom bildet og navbaren lenger fordi det skaper bedre flyt og den røde bunnen til navbaren skaper nok skille.</p>
+            
+            <h3>Endringer til om_katt.html og om_hund.html</h3>
+            <p>Det ble gjort endringen til styling for vising av hvert enkelt dyrene. Vising boksen fikk en tynn lys grå border som det skulle være lettere å skille mellom visning boksen mellom dyrene og gjøre lettere å se hvilket innhold som tilhørt til dyret. 
+                Også ble endring på oppsett av tekst som navnet til dyr er en overskrift i stedet for normal tekst. 
+                Begrunnelse for denne endringen var å lage et mer ryddig oppsett av informasjon av dyr, men også at designet ble mer spennende og varierende for brukeren. 
+                I tillegg ble lagt til en “Vis Alle” knapp som bruker reset sorteringen om de ønsker. Knappen fikk også “clickable” effekt som når brukeren trykk på allergivennlig så vil teksten til den bli rød for å indikere at den som valgt. 
+                Også knappen og boksene til dyrene fikk en pointer “cursor” når hover over dem for enklere vise at de klikkbare elementer. Strukturen på hvordan dyrene ble presentert på siden “katter til adopsjon” og “hunder til adopsjon” ble også endret, 
+                fra å henholdsvis skulle vise bilde av dyr til adopsjon 3x3, til å sette display på så langt rekke om mulig innenfor “container”-boksen. 
+                Grunnen til at dette ble gjort var blant annet fordi utforming på bildene gjorde det mer hensiktsmessig med flere dyr i lengden, 
+                også er enklere for bruker med større skjerme å ha mulighet å ta nytte av det. Spesielt siden det er ikke så mye hensikt å forstørre eventuelt display-boksen. 
+                En endring som kunne ha blitt gjort er å tilpasse display-boksen bedre til mobil og nettbrett med media query, men gruppen prioriterte heller funksjonalitet </p>
+
+            <h3>Endringer til hund_n.html og katt_n.html</h3>
+            <p>Antall hund_n og katt_n sider redusert siden det var unødvendig å ha så mange. 
+                “Send søknad”-knappen har blitt endret til “til kontaktskjema”, 
+                siden vi så at et kontaktskjema var mer hensiktsmessig for brukeren og organisasjonen med tanke på videre kommunikasjon frem mot adopsjon av et dyr. </p>
+            <p>Det ble valgt å fjerne beskrivelsene som lå under bildene, da dette virket uhensiktsmessig, fordi denne informasjonen kom frem i teksten om hvert dyr. Det er derfor opp til hver enkelt klient/kunde å finne denne informasjonen i teksten om dyret. </p>
+
+            <!-- kanskje fjernes -->
+            <p>Siden dette er et gruppearbeid, ble det enklere for utviklere/oss å ha en egen CSS-fil å jobbe med, og ikke en felles. 
+                Ved bruk av kun en CSS-fil, vil også filen bli veldig lang med hundrevis av linjer. 
+                Dette er medvirkende årsaker til at prosjektet inneholder en ekstra CSS-fil.</p>
+
+            <p>Designet på bildegalleriet er endret fra utgangspunktet, der vi utgangspunktet ønsket å ha navigering på siden av galleriet. 
+                Dette ble flyttet til nederst i høyre og venstre hjørne av bildet til nederst på bildet fordi dette designet i ettertid viste seg å være mer oversiktlig.</p>
+
+            <h3>Endringer til kontaktskjema</h3>
+            <p>Designet ble endret litt i forhold til planen fra figma for å gjøre det litt finere. 
+                I stedet for helt firkantede input-felter ble hjørnene avrundet litt, og linja rundt input-feltet ble gjort litt smalere. 
+                I tillegg ble forklaringstekst lagt til i inputfeltene, slik at man forhåpentligvis unngår å skrive inn feil informasjon på feil format. 
+                I tillegg ble teksten på submit-knappen endret fra “send søknad” til “send skjema”, da det ble bestemt at det egentlig ikke var snakk om et søknadsskjema. 
+                Kontaktskjemaet ble også gjort responsivt vha. @media query, slik at skjemaet blir smalere (input-tekst flyttes over input-felt) når bredden på vinduet er under 800px. Dette ble ikke vist eller nevnt i P2.</p>
+
+            <!-- Endring i css -->
+            <h3>Endringer til tiltenkt css styling</h3>
+            <ul class="normal-font">
+                <li><strong>Font</strong>: Istedenfor å ha all normal tekst i semibold, bestemte gruppen seg for å teksten normal. 
+                    Gruppen kom fram til at det ikke ga mening å ha alt i semibold, siden dette blir brukt å understreke noe viktig i en setning. 
+                    I tillegg så teksten mye ryddigere ut, noe gruppen tenkte ville gjøre nettsiden enklere å lese for brukeren.</li>
+                <li><strong>Knapper</strong>: Hovedsakelig ble stylingen beholdt som bestemt i P2. Knappene som fører brukeren til kontaktskjema fikk hover-effekt der knappene mister litt opacity. 
+                    Knappene på sorting-navbaren fikk klikkbar effekt hvor teksten til knappen blir rød, og tilbakestiller til svart når bruker trykker på en annen knapp.</li>
+                <li><strong>Navbar</strong>: Det ble endret på stylingen til navbar. 
+                    Bakgrunnen for endringen er at underlinje på “Fosterhjem” og “Om oss” ikke var nødvendig, og at navbaren ble mer ryddig og sammenhengende. 
+                    “Fostring” ble også endret til “fosterhjem” fordi det passet bedre. Linken til kontaktskjema ble fjernet fra navbaren fordi den var unødvendig, 
+                    siden brukeren kan navigere seg til kontaktskjemaet via andre sider etter å ha besøkt om_katt.hmtl, om_hund-html eller fosterhjem.html. 
+                    Det ble også lagt til at å ha museknappen over alle elementer, bortsett fra logoen, 
+                    endrer bakgrunnsfargen til det elementet til gråfargen: #808080. 
+                    Årsaken er at det er lettere for brukeren å se hvilket element han har musen over. Logoen er ekskludert fordi å endre bakgrunnsfargen er distraherende.</li>
+            </ul>
+
+            <!-- Nye filer -->
+            <h3>Tillegg Javascript fil create_animal_page.js</h3>
+            <p>Create_Anima_lPage.js er en funksjon exponent på vinduet som lager html for katter og hunder på undersiden med kopulerte variabler, blant annet bilder og tekst + alt tag og browser tittel. 
+                Dette innså vi at måtte gjøres for å slippe mye manuell html.</p>
+
+            <h3>Tillegg Javascript fil dyr.js</h3>
+            <p>Dyr.js inneholder dataene/informasjon som json format til dyrene blir vist på “om_katt” og “om_hund”. 
+                Denne filene ble lagt forbindelse tanke om videreutvikling. 
+                Det er lettere å utvide dyrene ved å legge inn et nytt i dyr.js filen istedenfor å måtte hardkode hvert enkelt dyr inn. </p>
+
+            <h3>Tillegg Javascript fil navbar_storting.js</h3>
+            <p>Nav_stortering.js sitt formål er å lage navbar for sortering av dyrene. Dette ble gjort sin egne fill siden den krevende en annen styling som er i navbar.js, 
+                også har en annen funksjonalitet at brukeren skal navigere igjennom dyr, ikke nettsidene. Det ble også brukt variable som er data i json format for å lage knappene og alternativ barene med de forskjellige verdiene til hund og katt. 
+                Også en annen viktig punkt gruppen kom til avgjørelse å lage denne navbar i JavScript istdenfor hardkoden den inn er for modularitet til koden. 
+                Ved å ha sin egne filer så slipper gjenta koden på to av samme stedet.</p>
+            
+            <!-- Kanskje fjernes -->
+            <h3>Tillegg css fil animal.css</h3>
+            <p>Laget et unikt animal.css fil for spesiell styling på alle dyrenes underside, gjenbrukes flere steder. En utvidelse og i tillegg til styling.css. </p>
+
+            <h3>Modularitetskrav</h3>
+            <p>Nav_stortering.js sitt formål er å lage navbar for sortering av dyrene. 
+                Dette ble gjort sin egne fill siden den krevende en annen styling som er i navbar.js, også har en annen funksjonalitet at brukeren skal navigere igjennom dyr, ikke nettsidene. 
+                Det ble også brukt variable som er data i json format for å lage knappene og alternativ barene med de forskjellige verdiene til hund og katt. 
+                Også en annen viktig punkt gruppen kom til avgjørelse å lage denne navbar i JavScript istdenfor hardkoden den inn er for modularitet til koden. 
+                Ved å ha sin egne filer så slipper gjenta koden på to av samme stedet.</p>
+        </section>
+
+        <section>
+            <h2>Minstekrav</h2>
+
+            <h3>Navbar.js</h3>
+            <p>En dropdown navbar blir lagt til i hver fil med js. Å legge til navbar er samme krav som footer.js, 
+                men i tillegg implementer skriptet dropdown egenskapen. Det blir brukt mouseover på adopsjons knappen 
+                for å vise dropdown innholdet og mouseleave på dropdown elementet, knappen og innholdet, for å lukke det</p>
+            
+            <p>Det meste ble gjort av Hermann, men Sunniva og Kari lagde konstanten locationIsSubPath som gjør at navbaren fungerer også i hund_n.html og katt_n.html filene. Skriptet benyttes i alle html-filene.</p>
+
+            <h3>Footer.js</h3>
+            <p>Hermann fikk footer.js til å legge til kontakt adresse og organisasjonsnummer i bunnen av alle sidene som har elementet footer med id=”footer”. Alle filene har footer elementet, så skriptet er på alle html-filene.</p>
+
+            <h3>Sorting.js</h3>
+            <p>Andrine laget sorting system via bruke json format dataen i dyrs.js for å kunne sortering data i json på sorting.js. 
+                Sortering.js også benytte seg av navbar som ble laget storting_navbar.js og la til funksjonalitet på knappene og menybaren som ble lagt i scripte det. 
+                Sorting.js ble brukt i sidene: om_hund.html og om_katt.html.</p>
+
+            <h3>Form_validation.js</h3>
+            <p>Form validation i javascript ble lagt inn i prosjektet siden gruppen var usikker på om vi ville ha nok javascript. 
+                Til slutt kom gruppen frem til at vi hadde nok javascript, og da ble form validation i javascript vurdert som unødvendig. 
+                I stedet ble form validation lagt inn i html-filen, slik at Helga fikk mer tid til styling av kontaktskjemaet i stedet.</p>
+
+            <h3>Image_silder.js</h3>
+            <p>Det ble laget en image slider som viser bilder av det respektive dyret, der det er mulig å trykke på bildet for å få det i full skjerm. 
+                Det er mulig å navigere seg mellom bildene med piltaster og mulig å gå ut av større bilde ved å trykke på utkanten av bildet eller ved å bruke ecs-tasten. </p>
+        </section>
+
+        <section>
+            <h2>Filer og ansvarsområde</h2>
+
+            <h3>Lister over filer og mapper:</h3>
+            <ul class="normal-font">
+                <li>css/ 
+                    <ul class="normal-font">
+                        <li>styling.css</li>
+                        <li>animal.css</li>
+                    </ul>
+                </li>
+                <li>img/ 
+                    <ul class="normal-font">
+                        <li>forside/ 
+                            <ul class="normal-font">
+                                <li>forside_hund.png</li>
+                                <li>forside_katt.png</li>
+                            </ul>
+                        </li>
+                        <li>hunder/ 
+                            <ul class="normal-font">
+                                <li>hund_1_1.png</li>
+                                <li>...</li>
+                                <li>hund_5_2.png</li>
+                            </ul>
+                        </li>
+                        <li>katter/ 
+                            <ul class="normal-font">
+                                <li>katt_1_1.png</li>
+                                <li>...</li>
+                                <li>katt_6_2.png</li>
+                            </ul>
+                        </li>
+                        <li>adopsjon.png</li>
+                        <li>bidra.jpg</li>
+                        <li>down_arrow.png</li>
+                        <li>fostering.jpg</li>
+                        <li>headerLogo.png</li>
+                        <li>om_oss.jpg</li>
+                        <li>Vipps_logo.png</li>
+                    </ul>
+                </li>
+                <li>js/ 
+                    <ul class="normal-font">
+                        <li>create_animal_page.js</li>
+                        <li>dyr.js</li>
+                        <li>footer.js</li>
+                        <li>image_slider.js</li>
+                        <li>navbar_storting.js</li>
+                        <li>navbar.js</li>
+                        <li>sortering.js</li>
+                    </ul>
+                </li>
+                <li>om_hund/ 
+                    <ul class="normal-font">
+                        <li>hund_1.html</li>
+                        <li>...</li>
+                        <li>hund_5.html</li>
+                    </ul>
+                </li>
+                <li>css/ 
+                    <ul class="normal-font">
+                        <li>katt_1.html</li>
+                        <li>...</li>
+                        <li>katt_6.html</li>
+                    </ul>
+                </li>
+                <li>adopsjon.html</li>
+                <li>bidra.html</li>
+                <li>forside.html</li>
+                <li>fosterhjem.html</li>
+                <li>kontakt_skjema.html</li>
+                <li>om_hund.html</li>
+                <li>om_katt.html</li>
+                <li>om_oss.html</li>
+                <li>takk_for_din_soknad.html</li>
+            </ul>
+
+            <h3>Arbeidsfordeling og tidsfrister</h3>
+            <p>Noen av tidsfrister ble endret på fordi en del av oppgavene tok lengre tid enn planlagt. 
+                I tillegg bestemte gruppen seg for å gjøre noen endringer mot slutten av prosjektet etter å ha fått tilbakemeldinger fra project advisor. </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Filnavn</th>
+                        <th>Beskrivelse</th>
+                        <th>Ansvarlig</th>
+                        <th>Tidsfrist Originalt</th>
+                        <th>Ny tidsfrist</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>styling.css</td>
+                        <td>Styling til hele nettsiden</td>
+                        <td>Alle</td>
+                        <td>02/11/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>animal.css</td>
+                        <td>Styling til enkelt dyr side</td>
+                        <td>Kari og Sunniva</td>
+                        <td>02/11/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>Logo.png</td>
+                        <td>Logo for nettsiden</td>
+                        <td>Helga</td>
+                        <td>07/10/2021</td>
+                        <td>07/10/2021</td>
+                    </tr>
+                    <tr>
+                        <td>create_animal_page.js</td>
+                        <td>En javascript fil som lager layout for enkelt dyr side</td>
+                        <td>Kari og Sunniva</td>
+                        <td>02/11/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>dyr.js</td>
+                        <td>En javascript fil som inneholder data om dyr i json format</td>
+                        <td>Andrine</td>
+                        <td>02/11/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>footer.js</td>
+                        <td>En javascript som skal legge til en footer i alle html filene</td>
+                        <td>Hermann</td>
+                        <td>15/10/2021</td>
+                        <td>02/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>image_slider.js</td>
+                        <td>Bildegalleri av dyrene i annonsene for adopsjon og vising i forside</td>
+                        <td>Sunniva og Kari</td>
+                        <td>02/11/2021</td>
+                        <td>02/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>navbar_storting.js</td>
+                        <td>En javascript fil som lager nav for sortering</td>
+                        <td>Andrine</td>
+                        <td>02/11/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>navbar.js</td>
+                        <td>En javascript legger til navbar i alle html filene.</td>
+                        <td>Hermann</td>
+                        <td>15/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>sortering.js</td>
+                        <td>Sortering av dyr for adopsjon på sidene og om_hund.html og om_katt.html</td>
+                        <td>Andrine</td>
+                        <td>02/11/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>hund_n.html</td>
+                        <td>Enkelt annonse av hund som er mulig å adoptere.</td>
+                        <td>Sunniva</td>
+                        <td>24/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>katt_n.html</td>
+                        <td>Enkelt annonse av katt som er mulig å adoptere.</td>
+                        <td>Kari</td>
+                        <td>24/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>adopsjon.html</td>
+                        <td>Oversiktsside over informasjon om adopsjon samt prosessen og hvilke krav som stilles for adopsjon</td>
+                        <td>Sunniva og Kari</td>
+                        <td>24/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>bidra.html</td>
+                        <td>Informasjonsside om hvilken muligheter det er for støtte organisasjonen</td>
+                        <td>Andrine</td>
+                        <td>16/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>fosterhjem.html</td>
+                        <td>Informasjonsside om fosterhjem</td>
+                        <td>Helga</td>
+                        <td>22/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>kontakt_skjema.html</td>
+                        <td>Kontaktskjema som brukes for adopsjon/fostring</td>
+                        <td>Helga</td>
+                        <td>22/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>hund_n.html</td>
+                        <td>Enkelt annonse av hund som er mulig å adoptere.</td>
+                        <td>Sunniva</td>
+                        <td>24/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>om_katt.html</td>
+                        <td>Siden viser hvilken katter som er for adopsjon</td>
+                        <td>Andrine</td>
+                        <td>22/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>om_oss.html</td>
+                        <td>Side som fortelle om organisasjonen og gir kontaktinfo</td>
+                        <td>Hermann</td>
+                        <td>15/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td>takk_for_soknad.html</td>
+                        <td>Side som kommer opp når kontaktskjema er sendt inn</td>
+                        <td>Helga</td>
+                        <td>22/10/2021</td>
+                        <td>10/11/2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+  </body>
+</html>
