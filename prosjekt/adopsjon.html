@@ -35,7 +35,21 @@
             font-weight: normal;
         }
 
+        #buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        #buttons > a:nth-child(1) {
+            margin-left: calc(-15% * 0.0001);
+        }
+
+        #buttons > a:nth-child(2) {
+            margin-left: 15%;
+        }
+
         #buttons > a {
+            display: flex;
             border: none !important;
             outline: none !important;
             text-decoration: none !important;
@@ -47,9 +61,15 @@
             border-radius: .25em;
             cursor: pointer;
 
+            min-width: 100px;
+
             opacity: 1;
 
             transition: opacity 200ms ease;
+        }
+
+        #buttons > a > span {
+            margin-left: auto;
         }
 
         #buttons > a:hover {
@@ -109,8 +129,8 @@
                 adopsjon og veien videre med oppfølging.
             </p>
             <div id="buttons">
-                <a href="om_katt.html">Katt</a>
-                <a href="om_hund.html">Hund</a>
+                <a href="om_katt.html">Katt <span>></span></a>
+                <a href="om_hund.html">Hund <span>></span></a>
             </div>
         </article>
     </main>
