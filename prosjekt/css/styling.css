@@ -496,3 +496,8 @@ input[type=submit] {
   margin: 0;
   padding: 0;
 }
+
+/* styling takk for din søknad-side*/
+.takk{
+  padding: 30px 0px;
+}
