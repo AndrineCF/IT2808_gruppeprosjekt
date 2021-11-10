@@ -48,13 +48,10 @@
                             .join('')
                         }
                     </div>
-                    <a href = "../kontakt_skjema.html" target="_blank"><button class="gallery-link" id="soknad">Gå til søknad</button></a>
+                    <a href = "../kontakt_skjema.html" target="_blank"><button class="gallery-link" id="soknad">Kontaktskjema ></button></a>
                 </article>
             `
 
-            // document.querySelector('#soknad').onclick = function() {
-            //     window.location.replace('../kontakt_skjema.html')
-            // }
         }
     }
 })();

@@ -485,3 +485,14 @@ input[type=submit] {
   min-height: var(--height);
   max-height: var(--height);
 }
+
+/* styling for bilde på om_oss og bidra*/
+.img-front {
+  object-fit: contain;
+  height: 50%;
+  width: 100%;
+}
+.none-margin-and-padding{
+  margin: 0;
+  padding: 0;
+}
