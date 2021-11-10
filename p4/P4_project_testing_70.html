@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="author" content="Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran, Kari Stigen">
+    <meta name="description" content="P4: Project testing, IT2805">
+    <meta name="keyword" content="Project Design">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <!-- Legger til ny font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+
+
+    <title>P4: Projekt testing</title>
+  </head>
+  <body>
+
+
+    <header>
+        <h1>P4: Prosjekt testing</h1>
+        <h2 class ="lighter-font-color">Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran og Kari Stigen</h2>
+        <span class ="lighter-font-color">4. Oktober 2021</span>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dokumentdetaljer</h2>
+            <h3 class="none-weight">Nytt hjem for Dyr</h3>
+            <h3 class="none-weight">Andrine Celine Flatby, Sunniva Andresen, Helga Munkeby Tingstad, Hermann Andreas Kran og Kari Stigen</h3>
+            <h3 class="none-weight">11.November 2021</h3>
+        </section>
+
+        <section>
+            <h2>Klient</h2>
+            <p><strong>Klient:</strong> Nytt hjem for dyr</p>
+            <p><strong>kontaktperson:</strong> Einar Lillevik</p>
+            <p><strong>Stilling:</strong> Daglig leder</p>
+            <p><strong>Link til nettsiden:</strong> <a href = "https://folk.ntnu.no/andrinef/IT2808_gruppeprosjekt/prosjekt/forside.html">klikk</a></p>
+        </section>
+
+        <section>
+            <h2>Testdokument</h2>
+            <p>Link til google form: <a herf="https://docs.google.com/forms/d/1yCyP2_iURgQCWUibEsjz-ZSsFk486jeme4jrG9BpuZY/edit">klikk her</a></p>
+            <p>Skjemaet spør først om hvilken type enhet og browser testeren bruker, slik at vi eventuelt kan sjekke det ut hvis det er tekniske problemer i forbindelse med enhet eller browser. 
+                Deretter spør skjemaet om testeren er innenfor målgruppen som vektlegger svarene i forbindelse med design, om nettsiden var informativ osv. 
+                Videre sjekker skjemaet om brukervennlighet via spørsmål om hvordan det er å navigere på nettstedet generelt. Det spørres også om fargeblindhet i forbindelse med design, 
+                siden nettstedet har en del rødtoner som kanskje kan gjøre det vanskelig for en bruker med fargeblindhet å finne frem. I tillegg sammenligner skjemaet gammel design mot det ny design på nettsiden, 
+                og spør hvor enkelt det er for bruker å forstå informasjonen som blir gitt i de to versjonene. 
+                Til slutt spør skjemaet om noen hadde tekniske problemer og om en generell tilbakemelding.</p>
+        </section>
+
+        <section>
+            <h2>Test publikum</h2>
+            <p>Det første spørsmålet som stilles i skjemaet forsøker å finne ut om testeren er i målgruppen ved å spørre om de liker dyr eller ikke. Selv om dette kan virke som en selvfølge siden “Nytt hjem for dyr” er en nettside for fosterhjem og adopsjon av dyr, 
+                er det likevel viktig å sjekke om testeren i det hele tatt har interesse for dyr. Av testerne svarte 95,8% ja på spørsmålet, og de neste spørsmålene prøver deretter å kartlegge målgruppen videre.</p>
+            
+            <p>Videre spør skjemaet “kunne du tenkt deg å være et fosterhjem eller adoptere et dyr?”. Dette spørsmålet vil kartlegge enda mer presist om testeren er i målgruppen for nettsiden. 72,2% kunne tenkt seg dette.</p>
+
+            <p>I google-skjemaet var det listet opp forskjellige aldersgrupper:</p>
+            <ul class = "normal-font">
+                <li>10-17: 4,2%</li>
+                <li>18-23: 29,2%</li>
+                <li>24-40: 50%</li>
+                <li>40-50: 0%</li>
+                <li>50-60: 16,7%</li>
+                <li>70-100: 0%</li>
+            </ul>
+
+            <p>Inndelingen ble gjort slik fordi man i alderen 10-17 kan tenke seg at man fortsatt bor med en foresatt og derfor ikke kan bestemme om man kan skaffe seg et dyr eller ikke. I gruppen
+                18-23 er man mest sannsynlig studenter, og dermed er sjansen stor for at man ikke har tid eller mulighet til å ha dyr i leilighet/kollektiv. 
+                I gruppen 24-40 er man mest sannsynlig i jobb og dermed har man bedre mulighet for å ha økonomien og bolig for å kunne ha et kjæledyr. 
+                I etterkant kunne gruppen 24-40 vært satt til 24-65 for å også inkludere alle frem til pensjonsalder. Dermed ville man heller hatt 65-100 som siste aldersgruppe.
+                </p>
+        </section>
+
+        <section>
+            <h2>Testplattform</h2>
+            <p>I google-skjemaet er dette det første brukeren blir spurt om. Resultatet av hvilken type enhet som ble testet er vist under:</p>
+            <ul class = "normal-font">
+                <li>Mac: 12,5%</li>
+                <li>Laptop: 33,3%</li>
+                <li>Nettbrett: 0%</li>
+                <li>Mobil: 33,3%</li>
+                <li>Stasjonær PC: 20,8%</li>
+            </ul>
+            <p>Resultatene viser at det er mest laptop og mobil som ble brukt av testerne, med stasjonær pc på tredjeplass. Vi tok ikke hensyn til hvordan nettsiden kom til å være på mobil, 
+                så et stort antall av testerne fikk derfor en dårlig stylet navbar og footer.</p>
+            <p>Videre spurte skjemaet om hvilken browser testerne brukte når de testet nettsiden. Skjemaet fikk følgende resultater:</p>
+            <ul class = "normal-font">
+                <li>Google: 75%</li>
+                <li>Edge: 4,2%</li>
+                <li>FireFox: 8,3%</li>
+                <li>Safari: 8,3%</li>
+                <li>Brave Browser: 4,2%</li>
+            </ul>
+            <p>Det er viktig å påpeke at testeren kunne skrive inn hva de ville under “annet”. 
+                Dette var for å ta hensyn til de mindre standardiserte browserne. 
+                Google Chrome er mest brukt, og den er også mest brukt av testerne. 
+                Det ble ikke gitt feedback i forbindelse med tekniske problemer med browseren.  </p>
+        </section>
+
+        <section>
+            <h2>Tilbakemeldingssammendrag</h2>
+            <p>På navigasjon sa 95,5 % at det var enkelt å finne fram på nettsiden, men for brukere på mobil burde navbar brukt overflow-y slik at den hadde blitt bedre plassert. Også selve sorteringssystemet var enkelt å finne fram til, 
+                men testerne ønsket å kunne sortere på flere av valgene samtidig og savnet å kunne sortere på rase. Dette er funksjonaliteter som kunne blitt lagt til hvis nettsiden skulle blitt videreutviklet.</p>
+            <p>I forbindelse med designet til nettsiden var det blandede meninger. Kritikken gikk hovedsakelig på at designet kunne brukt mer og sterkere farger for å kunne skille elementene bedre fra hverandre. 
+                I tillegg kunne teksten vært mer variert, siden det ble mye normal tekst. Til slutt ble animasjonen på forsiden beskrevet som litt brå, og derfor kunne en fading-effekt kanskje blitt brukt i det man bytter bilde, 
+                slik at det ikke blir for voldsom overgang mellom bildene. 
+                Overgangen mellom bildene krever derimot kunnskap vi ikke sitter inne med og det er komplisert å få til bra. Hadde vi derimot brukt et tredjeparts bibliotek så hadde en slik overgang vært noe enklere. </p>
+            <p>På enkeltsiden til dyr (for eksempel katt_1.html) fikk man mest kritikk på språket, men siden teksten er mest ment for å fylle nettsiden og innholdet er mindre viktig, 
+                så går dette greit. Den viktigste kritikken gikk på at det er vanskelig å få med seg informasjon om dyret. Dette fremgikk når testeren ble spurt om de likte det nye eller gamle designet best. 
+                En stor andel foretrakk det gamle på grunn av at dette designet hadde mer oversiktlig info for de viktige punktene (rase, kjønn og osv). 
+                I ettertanken burde vi beholde det gamle design siden den som virker mest brukervennlig og hva målgruppen foretrekker.</p>
+            <p>Generelt feedback var nettsiden så greit ut, men var ønsket om litt mer funksjonalitet på noen områder. For eksempel å kunne blande igjennom bilde når de er forstørre på enkeltdyr. Ellers så var igjen hovedsakelig språkbruket testerne kommenterte på.</p>
+        </section>
+
+        <section>
+            <h2>Vår Respons</h2>
+            <p>Overflow-y er tidkrevende, men fullstendig mulig å forbedre for mobilbrukerne. Burde bruke media-query: vertical, siden mobiler har for mange pixler til at å bruke pixler vil fungere som ønsket.</p>
+            <p>Å endre sortering systemet er vanskelig siden det krever en mer kompleks script fil enn den vi allerede har.</p>
+            <p>Ut ifra den skriftlige tilbakemeldingen om kontaktskjema “Det bør vurderes om kontaktskjema skal ligge på samme linje som: Adopsjon, Fostring, Bidra, Om oss” og en lignende live tilbakemelding, 
+                bestemte vi oss for å fjerne kontaktskjema fra navbaren. Dette var så lett å gjøre at vi kunne gjøre det før innleveringen av prosjektet.</p>
+            <p>Tilbakemeldingen “Navigasjons knappene føltest litt gjemt ut oppe til høyre. Kan evt legge til en rull av dyr oppe for adopsjon på fremsiden som blas gjennom som man kan klikke på i tillegg.” kan delvis implementeres, 
+                men burde ikke. Det er ikke urimelig å endre størrelsen og posisjonen til navigasjonsknappen, men å ha alle dyr tilgjengelig fra navbaren vil gå dårlig. 
+                Årsaken er at det er ingen begrensning på hvor mange hunder eller katter siden kan ha oppe, så det kan bli overflod av knapper som ødelegger alle siders oppsett.</p>
+            <p>“Burde sett på muligheten for å se fullt bilde inne på hver enkelt hund, som ble forstørret uten å se hele hunden, frem til man trykker på pluss-tegnet/forstørrer opp. Men kan da ikke bla mellom de ulike bildene, 
+                men må gå inn og ut for hvert enkelt bilde.” krever masse koding og manipulasjon av bilder vi ikke har i dag.</p>
+            <p>“Litt det med overflow-y, når det kommer til telefon bruk. Og på introsiden så blir bilde byttet fra katt til hund ganske dramatisk. Burde være en animasjon på byttet.” Overflow-y problemer kan løses ved å ha en egen styling for mobiler, 
+                noe vi ikke laget for nettsiden. Med tanke på hvor stor den positive tilbakemeldingen er blant mobil-brukerne, trenges det bare å gjøre noen få justeringer. Animasjon har vi ikke lært noe om, så det trenger en del opplæring.
+                En ting vi kan hente ut ifra personene som likte eksempel 2 bedre enn 1 er at vi burde nok ha større tekst font.
+                </p>
+        </section>
+        <section>
+            <h2>Selvrefleksjon</h2>
+            <p>Har lært at det ligger veldig mye arbeid bak å lage en nettside, i tillegg til å erfare hvor mye arbeid og kunnskap som ligger bak all kodingen. </p>
+            <p>Det har gjennom perioden vært krevende med gruppearbeid der man ikke har møtes fysisk, og vi har kanskje ikke vært like flink til å holde kontakten gjennom samarbeid perioden. 
+                Dette har resultert i utfordringer med tanke på status for prosjektet. Med dette har vi fått erfart hvordan det er å samarbeide digitalt.</p>
+            <p>Vi har vært dårlig til å holde tidsfrister innad i gruppen, noe som har ført til at vi har gjort mye i siste liten. Dette innebærer også at sending av utkast til veileder har vært litt forsinket, 
+                som igjen har resultert i sene svar fra veileder. Dette har ført til en ond sirkel, der vi hele tiden har ligget litt på etterskudd. </p>
+        </section>
+    </main>
+  </body>
+</html>
