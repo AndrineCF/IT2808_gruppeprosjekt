@@ -1,6 +1,6 @@
 
-/* links to header */
-var navHeader = document.getElementsByClassName("navbar")[0];
+/* links to the navbar */
+var navbar = document.getElementsByClassName("navbar")[0];
 
 // create the a element
 var a = document.createElement("a");
@@ -10,7 +10,7 @@ var img = document.createElement("img");
 
 const locationIsSubPath = /om_(hund|katt|)\//gmi.test(window.location.href)
 
-// link img to headerLogo
+// link img to navbar logo
 img.src = locationIsSubPath ? "../img/headerLogo.png" : "img/headerLogo.png";
 
 // adds alt to img
@@ -23,7 +23,7 @@ a.appendChild(img);
 a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}forside.html` : "forside.html"
 
 // adds a to the navbar
-navHeader.appendChild(a);
+navbar.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
@@ -33,7 +33,7 @@ a.innerHTML = "Om oss";
 a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}om_oss.html` :"om_oss.html"
 
 // adds a to the navbar
-navHeader.appendChild(a);
+navbar.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
@@ -43,7 +43,7 @@ a.innerHTML = "Bidra";
 a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}bidra.html` :"bidra.html"
 
 // adds a to the navbar
-navHeader.appendChild(a);
+navbar.appendChild(a);
 
 // reset var a 
 a = document.createElement("a");
@@ -53,7 +53,7 @@ a.innerText = "Fosterhjem";
 a.href = locationIsSubPath ? `${window.location.href.split('om_')[0]}fosterhjem.html` : "fosterhjem.html"
 
 // adds a to the navbar
-navHeader.appendChild(a);
+navbar.appendChild(a);
 
 // create the div element that shall contain the dropdown
 var dropdownDiv = document.createElement("div");
@@ -111,7 +111,7 @@ dropdownContent.appendChild(a);
 dropdownDiv.appendChild(dropdownContent);
 
 // adds a to the navbar
-navHeader.appendChild(dropdownDiv);
+navbar.appendChild(dropdownDiv);
 
 // adds mouseover to the button so that the content can be shown
 dropdownBtn.onmouseover = function(){
