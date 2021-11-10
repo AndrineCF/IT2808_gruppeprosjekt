@@ -11,7 +11,7 @@ var img = document.createElement("img");
 const locationIsSubPath = /om_(hund|katt|)\//gmi.test(window.location.href)
 
 // link img to navbar logo
-img.src = locationIsSubPath ? "../img/headerLogo.png" : "img/headerLogo.png";
+img.src = locationIsSubPath ? "../img/Logo.png" : "img/Logo.png";
 
 // adds alt to img
 img.alt = "Logo"
