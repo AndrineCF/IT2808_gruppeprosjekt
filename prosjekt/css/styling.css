@@ -480,6 +480,8 @@ input[type=submit] {
 
 /*media query */
 
+/* Hente størrelsen som er brukt i media query fra https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/ */
+
 /* Laptops */
 @media only screen and (min-width:769px) and (max-width:1024px) {
   /* Gjør kontaktskjema smalere når bredde under 800px: */
@@ -488,18 +490,22 @@ input[type=submit] {
       left: 0px;
       padding: 0px;
     }
+
     [class*="kolonne-venstre"] {
       width: 100%;
       margin-top: 0px;
     }
+
     [class*="kolonne-midt"] {
       width: 50%;
       margin-top: 0px;
     }
+
     [class*="kolonne-høyre"] {
       width: 50%;
       margin-top: 16.5px;
     }
+
     [class*="box5"] {
       position: relative;
       left: 0px;
@@ -523,6 +529,7 @@ input[type=submit] {
     width: 8ch;
     left: 0;
   }
+
   [class*="kolonne-venstre"] {
     width: 100%;
     margin-top: 0px;
@@ -533,13 +540,16 @@ input[type=submit] {
     display: block;
     margin-bottom: 20px;
   }
+
   [class*="kolonne-høyre"] {
     width: 50%;
     margin-top: 16.5px;
   }
+
   [class*="kolonne-radio"] {
     top: -150px;
   }
+
   [class*="box5"] {
     position: relative;
     left: 0px;
@@ -556,34 +566,41 @@ input[type=submit] {
     left: 0px;
     padding: 0px;
   }
+
   [class *="box1"], [class *="box2"], [class *="box3"], [class *="box4"]{
     float: left;
     height: 40px;
     width: 6ch;
     left: 0;
   }
+
   [class*="kolonne-venstre"] {
     width: 100%;
     margin-top: 0px;
   }
+
   [class*="kolonne-midt"] {
     width: 50%;
     margin-top: 0px;
     display: block;
     margin-bottom: 20px;
   }
+
   [class*="kolonne-høyre"] {
     width: 50%;
     margin-top: 16.5px;
   }
+
   [class*="kolonne-radio"] {
     top: -150px;
   }
+
   [class*="box5"] {
     position: relative;
     left: 0px;
   }
-  footer div{
+
+  footer div {
     width: 20em;
     margin: auto;
   }
