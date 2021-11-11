@@ -70,15 +70,25 @@
                 I tillegg er det ikke lenger noe mellomrom mellom bildet og navbaren lenger fordi det skaper bedre flyt og den røde bunnen til navbaren skaper nok skille.</p>
             
             <h3>Endringer til om_katt.html og om_hund.html</h3>
-            <p>Det ble gjort endringen til styling for vising av hvert enkelt dyr. Vising boksen fikk en tynn lys grå border som det skulle være lettere å skille mellom visning boksen mellom dyrene og gjøre lettere å se hvilket innhold som tilhørt til dyret. 
-                Også ble endring på oppsett av tekst som navnet til dyr er en overskrift i stedet for normal tekst. 
-                Begrunnelse for denne endringen var å lage et mer ryddig oppsett av informasjon av dyr, men også at designet ble mer spennende og varierende for brukeren. 
-                I tillegg ble lagt til en “Vis Alle” knapp som bruker reset sorteringen om de ønsker. Knappen fikk også “clickable” effekt som når brukeren trykk på allergivennlig så vil teksten til den bli rød for å indikere at den som valgt. 
-                Også knappen og boksene til dyrene fikk en pointer “cursor” når hover over dem for enklere vise at de klikkbare elementer. Strukturen på hvordan dyrene ble presentert på siden “katter til adopsjon” og “hunder til adopsjon” ble også endret, 
-                fra å henholdsvis skulle vise bilde av dyr til adopsjon 3x3, til å sette display på så langt rekke om mulig innenfor “container”-boksen. 
-                Grunnen til at dette ble gjort var blant annet fordi utforming på bildene gjorde det mer hensiktsmessig med flere dyr i lengden, 
-                også er enklere for bruker med større skjerme å ha mulighet å ta nytte av det. Spesielt siden det er ikke så mye hensikt å forstørre eventuelt display-boksen. 
-                En endring som kunne ha blitt gjort er å tilpasse display-boksen bedre til mobil og nettbrett med media query, men gruppen prioriterte heller funksjonalitet </p>
+            <p>Det ble gjort endringen til styling for vising av hvert enkelt dyrene. 
+                Vising boksen fikk en tynn lys grå border som det skulle være lettere å skille mellom visning boksen mellom dyrene og gjøre lettere å se hvilket innhold som tilhørt til dyret. 
+                Også ble endring på oppsett av tekst som navnet til dyr er en overskrift i stedet for normal tekst. Begrunnelse for denne endringen var å lage et mer ryddig oppsett av informasjon av dyr, 
+                men også at designet ble mer spennende og varierende for brukeren. </p>
+
+            <p>I tillegg ble lagt til en “Vis Alle” knapp som bruker reset sorteringen om de ønsker. 
+                Knappen fikk også “clickable” effekt som når brukeren trykk på allergivennlig så vil teksten til den bli rød for å indikere at den som valgt. 
+                Også knappen og boksene til dyrene fikk en pointer “cursor” når hover over dem for enklere vise at de klikkbare elementer. </p>
+
+            <p>Strukturen på hvordan dyrene ble presentert på siden “katter til adopsjon” og “hunder til adopsjon” ble også endret, fra å henholdsvis skulle vise bilde av dyr til adopsjon 3x3, 
+                til å sette display på så langt rekke om mulig innenfor “container”-boksen. 
+                Grunnen til at dette ble gjort var blant annet fordi utforming på bildene gjorde det mer hensiktsmessig med flere dyr i lengden, også er enklere for bruker med større skjerme å ha mulighet å ta nytte av det. 
+                Spesielt siden det er ikke så mye hensikt å forstørre eventuelt display-boksen.</p>
+
+            <p>Sidene er responsive vha. bruk av @media query for å gjøre nettsiden mer mobilvennlig. 
+                Denne endringen ble gjort etter testing, da flere testet på mobil og gruppen fikk tilbakemelding om at nettsiden ikke fungerte optimalt på mobil. 
+                Media query gjør display-boksen og bildet i boksen til 200px lengde. Dette ble gjort fordi en mobilskjerm har mellom 360 og 480 pixels, og dermed blir den originale lengden på 300 pixels for stort. 
+                For å videre forbedre mobilvennligheten kunne man tilpasset bildene slik at de er på riktig format. På mobil og delvis også på pc/mac blir de strekt ut. 
+                Derfor kunne man kanskje brukt @media query i enda større grad for å forbedre dette. </p>
 
             <h3>Endringer til hund_n.html og katt_n.html</h3>
             <p>Antall hund_n og katt_n sider redusert siden det var unødvendig å ha så mange. 
@@ -86,7 +96,6 @@
                 siden vi så at et kontaktskjema var mer hensiktsmessig for brukeren og organisasjonen med tanke på videre kommunikasjon frem mot adopsjon av et dyr. </p>
             <p>Det ble valgt å fjerne beskrivelsene som lå under bildene, da dette virket uhensiktsmessig, fordi denne informasjonen kom frem i teksten om hvert dyr. Det er derfor opp til hver enkelt klient/kunde å finne denne informasjonen i teksten om dyret. </p>
 
-            <!-- kanskje fjernes -->
             <p>Siden dette er et gruppearbeid, ble det enklere for utviklere/oss å ha en egen CSS-fil å jobbe med, og ikke en felles. 
                 Ved bruk av kun en CSS-fil, vil også filen bli veldig lang med hundrevis av linjer. 
                 Dette er medvirkende årsaker til at prosjektet inneholder en ekstra CSS-fil.</p>
@@ -95,11 +104,11 @@
                 Dette ble flyttet til nederst i høyre og venstre hjørne av bildet til nederst på bildet fordi dette designet i ettertid viste seg å være mer oversiktlig.</p>
 
             <h3>Endringer til kontaktskjema</h3>
-            <p>Designet ble endret litt i forhold til planen fra figma for å gjøre det litt finere. 
-                I stedet for helt firkantede input-felter ble hjørnene avrundet litt, og linja rundt input-feltet ble gjort litt smalere. 
-                I tillegg ble forklaringstekst lagt til i inputfeltene, slik at man forhåpentligvis unngår å skrive inn feil informasjon på feil format. 
-                I tillegg ble teksten på submit-knappen endret fra “send søknad” til “send skjema”, da det ble bestemt at det egentlig ikke var snakk om et søknadsskjema. 
-                Kontaktskjemaet ble også gjort responsivt vha. @media query, slik at skjemaet blir smalere (input-tekst flyttes over input-felt) når bredden på vinduet er under 800px. Dette ble ikke vist eller nevnt i P2.</p>
+            <p>Designet ble endret litt i forhold til planen fra figma for å gjøre det litt finere. I stedet for helt firkantede input-felter ble hjørnene avrundet litt, 
+                og linja rundt input-feltet ble gjort litt smalere. 
+                I tillegg ble forklaringstekst lagt til i input-feltene, slik at man forhåpentligvis unngår å skrive inn feil informasjon på feil format. 
+                Teksten på submit-knappen ble endret fra “send søknad” til “send skjema”, da det ble bestemt at det egentlig ikke var snakk om et søknadsskjema. Kontaktskjemaet ble gjort responsivt vha. 
+                @media query fra begynnelsen av, slik at skjemaet blir smalere (input-tekst flyttes over input-felt og input-feltene blir mindre) dersom browservinduet er lite. </p>
 
             <!-- Endring i css -->
             <h3>Endringer til tiltenkt css styling</h3>
@@ -134,9 +143,13 @@
                 Også en annen viktig punkt gruppen kom til avgjørelse å lage denne navbar i JavScript istedenfor hardkoden den inn pga. modularitet til koden. 
                 Ved å ha sin egne filer så slipper gjenta koden på to av samme stedet.</p>
             
-            <!-- Kanskje fjernes -->
             <h3>Tillegg css fil animal.css</h3>
             <p>Laget et unikt animal.css fil for spesiell styling på alle dyrenes underside, gjenbrukes flere steder. En utvidelse og i tillegg til styling.css. </p>
+
+            <h3>Fjernet Javascript fil form_validation.js</h3>
+            <p>Form validation i javascript ble lagt inn i prosjektet siden gruppen var usikker på om vi ville ha nok javascript. 
+                Til slutt kom gruppen frem til at vi hadde nok javascript, og da ble form validation i javascript vurdert som unødvendig. 
+                I stedet ble form validation lagt inn i html-filen, slik at Helga fikk mer tid til styling av kontaktskjemaet i stedet.</p>
 
             <h3>Modularitetskrav</h3>
             <p>Nav_stortering.js sitt formål er å lage navbar for sortering av dyrene. 
@@ -164,14 +177,10 @@
                 Sortering.js også benytte seg av navbar som ble laget storting_navbar.js og la til funksjonalitet på knappene og menybaren som ble lagt i scripte det. 
                 Sorting.js ble brukt i sidene: om_hund.html og om_katt.html.</p>
 
-            <h3>Form_validation.js</h3>
-            <p>Form validation i javascript ble lagt inn i prosjektet siden gruppen var usikker på om vi ville ha nok javascript. 
-                Til slutt kom gruppen frem til at vi hadde nok javascript, og da ble form validation i javascript vurdert som unødvendig. 
-                I stedet ble form validation lagt inn i html-filen, slik at Helga fikk mer tid til styling av kontaktskjemaet i stedet.</p>
-
             <h3>Image_silder.js</h3>
-            <p>Det ble laget en image slider som viser bilder av det respektive dyret, der det er mulig å trykke på bildet for å få det i full skjerm. 
-                Det er mulig å navigere seg mellom bildene med piltaster og mulig å gå ut av større bilde ved å trykke på utkanten av bildet eller ved å bruke ecs-tasten. </p>
+            <p>Image_silder.js ble laget av Kari og Sunniva. Det ble laget en image slider som viser bilder av det respektive dyret, 
+                der det er mulig å trykke på bildet for å få det i full skjerm. 
+                Det er mulig å navigere seg mellom bildene med piltaster og mulig å gå ut av større bilde ved å trykke på utkanten av bildet eller ved å bruke ecs-tasten.</p>
         </section>
 
         <section>
