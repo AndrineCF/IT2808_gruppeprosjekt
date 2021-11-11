@@ -13,6 +13,7 @@ html, body {
 :root {
   --button-background-color: #C41200;
   --button-color: white;
+  --height: 500px;
 }
 
 body {
@@ -454,9 +455,7 @@ input[type=submit] {
   font-size: 15px;
 }
 
-
 #cover-image {
-  --height: 500px;
   height: var(--height);
   min-height: var(--height);
   max-height: var(--height);
