@@ -345,7 +345,7 @@ input[type=submit] {
 
 /* Styler container */
 .containerskjema {
-  width: 1000px;
+  width: 70vw;
   margin: auto;
   background-color: white;
   padding: 10px;
@@ -433,30 +433,6 @@ input[type=submit] {
   left: 190px;
 }
 
-@media only screen and (max-width: 800px) {
-  /* Gjør kontaktskjema smalere når bredde under 800px: */
-  [class*="containerskjema"] {
-    position: relative;
-    left: 0px;
-    padding: 0px;
-  }
-  [class*="kolonne-venstre"] {
-    width: 100%;
-    margin-top: 0px;
-  }
-  [class*="kolonne-midt"] {
-    width: 50%;
-    margin-top: 0px;
-  }
-  [class*="kolonne-høyre"] {
-    width: 50%;
-    margin-top: 16.5px;
-  }
-  [class*="box5"] {
-    position: relative;
-    left: 0px;
-  }
-}
 
 /* Styler kontaktskjema-knapp */
 .button1 {
@@ -501,3 +477,131 @@ input[type=submit] {
 .takk{
   padding: 30px 0px;
 }
+
+
+/*media query */
+
+/* Laptops */
+@media only screen and (min-width:769px) and (max-width:1024px) {
+  /* Gjør kontaktskjema smalere når bredde under 800px: */
+    [class*="containerskjema"] {
+      position: relative;
+      left: 0px;
+      padding: 0px;
+    }
+    [class*="kolonne-venstre"] {
+      width: 100%;
+      margin-top: 0px;
+    }
+    [class*="kolonne-midt"] {
+      width: 50%;
+      margin-top: 0px;
+    }
+    [class*="kolonne-høyre"] {
+      width: 50%;
+      margin-top: 16.5px;
+    }
+    [class*="box5"] {
+      position: relative;
+      left: 0px;
+    }
+  
+  }
+
+/* Tables */
+@media only screen and (min-width:481px) and (max-width:768px) {
+/* Gjør kontaktskjema smalere når bredde under 800px: */
+  [class*="containerskjema"] {
+    position: relative;
+    width: 390px;
+    padding: 0px;
+    left: 0px;
+  }
+  
+  [class *="box1"], [class *="box2"], [class *="box3"], [class *="box4"]{
+    float: left;
+    height: 40px;
+    width: 8ch;
+    left: 0;
+  }
+  [class*="kolonne-venstre"] {
+    width: 100%;
+    margin-top: 0px;
+  }
+  [class*="kolonne-midt"] {
+    width: 50%;
+    margin-top: 0px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  [class*="kolonne-høyre"] {
+    width: 50%;
+    margin-top: 16.5px;
+  }
+  [class*="kolonne-radio"] {
+    top: -150px;
+  }
+  [class*="box5"] {
+    position: relative;
+    left: 0px;
+  }
+
+}
+
+/* Mobil */
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  /* Gjør kontaktskjema smalere når bredde under 800px: */
+  [class*="containerskjema"] {
+    width: 250px;
+    position: relative;
+    left: 0px;
+    padding: 0px;
+  }
+  [class *="box1"], [class *="box2"], [class *="box3"], [class *="box4"]{
+    float: left;
+    height: 40px;
+    width: 6ch;
+    left: 0;
+  }
+  [class*="kolonne-venstre"] {
+    width: 100%;
+    margin-top: 0px;
+  }
+  [class*="kolonne-midt"] {
+    width: 50%;
+    margin-top: 0px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  [class*="kolonne-høyre"] {
+    width: 50%;
+    margin-top: 16.5px;
+  }
+  [class*="kolonne-radio"] {
+    top: -150px;
+  }
+  [class*="box5"] {
+    position: relative;
+    left: 0px;
+  }
+  footer div{
+    width: 20em;
+    margin: auto;
+  }
+
+  .animal-display {
+    width: 200px;
+  }
+
+  .animal-img{
+    width: 200px
+  }
+
+  #navbar-storting {
+    height: 80px;
+  }
+
+}
+
+
+
